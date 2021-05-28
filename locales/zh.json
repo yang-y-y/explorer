@@ -1,0 +1,441 @@
+{
+    "head": {
+        "title": "Block.org全币种区块链浏览器包括比特币浏览器、以太坊浏览器等100+浏览器",
+        "meta": {
+            "keywords": "区块链浏览器，以太坊区块链浏览器，区块查询，BTC区块链浏览器，Block.org",
+            "description": "Block.org支持全币种区块链查询，一个为全球用户打造的一站式链上数据查询平台。"
+        },
+        "search": {
+            "title": "查询区块链上地址，交易，区块信息 - Block.org区块链浏览器",
+            "keywords": "地址哈希，区块哈希，交易哈希，块高，最新爆块",
+            "description": "查询BTC，ETH，USDT等区块链的链上数据。"
+        },
+        "api": {
+            "title": "Block.org API 数据服务平台",
+            "keywords": "数据服务，API数据，API价格，什么是API",
+            "description": "Block.org API 数据服务平台为不同的用户以目的为导向，提供不同的API数据服务。"
+        },
+        "address": {
+            "title": "区块链浏览器查询区块地址余额，地址哈希，历史交易记录",
+            "keywords": "钱包地址，地址余额，转账记录，区块链浏览器",
+            "description": "区块链浏览器查询链上地址数据包括地址余额，地址哈希，历史交易数据等。"
+        },
+        "tx": {
+            "title": "Block.org 交易 | 交易总额，交易数量，确认数，手续费 ",
+            "keywords": "交易哈希，交易总额，手续费，交易数量，确认数",
+            "description": "区块链浏览器查询链上交易数据包括交易数量，交易总额，手续费，确认数等。"
+        },
+        "block": {
+            "title": "区块链浏览器 - 区块高度，区块哈希，区块大小，确认数，交易笔数",
+            "keywords": "区块高度，区块哈希，区块大小，确认数，交易笔数",
+            "description": "区块链浏览器查询链上区块数据，包括此链上的区块高度，区块大小，确认数，交易笔数。"
+        },
+        "coinList": {
+            "title": "Block.org区块链浏览器列表",
+            "keywords": "区块链搜索引擎, BTC区块链浏览器，USDT区块链浏览器，ETH区块链浏览器",
+            "description": "Block.org区块链浏览器是全球首个支持全币种区块链数据查询的区块链浏览器，支持BTC，ETH，USDT，BCH，LTC等主流数字货币。"
+        },
+        "coinDetail": {
+            "title": "区块链浏览器",
+            "keywords": "区块链浏览器",
+            "description": "区块链浏览器"
+        },
+        "tokenList": {
+            "title": "代币查询 - Block.org区块链浏览器",
+            "keywords": "区块链浏览器，代币，ETH代币，BTC代币",
+            "description": "Block.org 区块链浏览器支持所有的代币价格，市值，交易查询"
+        },
+        "tokenDetail": {
+            "title": "代币最新信息查询 - Block.org区块链浏览器",
+            "keywords": "区块链浏览器，ETH代币，BTC代币，代币价格，代币市值，代币数量",
+            "description": "Block.org 区块链浏览器支持所有的代币价格，市值，交易查询等查询。"
+        },
+        "uncleBlockList": {
+            "title": "叔块高度-区块链浏览器",
+            "keywords": "区块高度，ETH区块，以太坊区块",
+            "description": "区块链浏览器叔块高度查询。"
+        },
+        "uncleBlockDetail": {
+            "title": "叔块高度-区块链浏览器",
+            "keywords": "叔块哈希值",
+            "description": "- Block.org是第一个支持全币种查询的区块链浏览器，Block.org区块链浏览器支持BTC，BCH，ETH，ERC20 Token，LTC，ZCASH，DASH等超过500多种主流电子货币钱包地址，交易，最新爆块，块高等信息的秒级查询。"
+        },
+        "txDetail": {
+            "title": "Block.org 交易信息查询 - 区块链浏览器",
+            "keywords": "交易哈希，交易总额，手续费，交易数量，确认数",
+            "description": "Block.org 区块链浏览器查询区块交易数量，交易哈希，交易总额，确认数，手续费等信息。"
+        }
+    },
+    "headerTab": {
+        "home": "首页",
+        "charts": "图表",
+        "blockList": "爆块",
+        "pending": "待确认交易",
+        "token": "代币",
+        "search": "搜索",
+        "api": "APIs",
+        "lang": "语言",
+        "explorer": "浏览器",
+        "newAddress": "地址",
+        "newTxs": "交易",
+        "largetxs": "巨鲸追踪",
+        "topaccount": "富豪榜",
+        "miner": "矿工排名"
+    },
+    "headerMore": {
+        "blocklist": "最新爆块",
+        "uncleblocklist": "叔块"
+    },
+    "indexInfo":{
+        "coin":"区块链",
+        "price":"价格",
+        "updown24":"涨跌幅(24小时)",
+        "latestBlock":"最新爆块",
+        "time":"最近出块时间",
+        "fee":"交易手续费",
+        "AmountTransacted":"交易总额",
+        "mechanism":"机制"
+    },
+    "coinPrice": {
+        "latestBlock": "最新爆块",
+        "price": "价格",
+        "marketValue": "总市值",
+        "updown24": "涨跌幅(24小时)",
+        "btcys": "BTC 优势",
+        "trans24": "交易笔数(24H)",
+        "hashRate": "算力",
+        "diff": "挖矿难度",
+        "rptrans": "消息数量(24H)",
+        "volume24": "成交额(24H)",
+        "turnover": "换手率",
+        "count": "交易总笔数",
+        "neoholder": "NEO持币地址数",
+        "gasholder": "GAS持币地址数",
+        "size": "空间占用量",
+        "transMount24": "成交量(24H)",
+        "transMount": "转账总额(24H)",
+        "Circulate": "总流通量",
+        "turnover24": "换手率(24H)",
+        "holder": "持币地址数",
+        "vote": "投票权",
+        "inflation": "通胀率",
+        "circul": "流通量",
+        "marketData": "链上数据",
+        "blockData": "市场数据",
+        "fic": {
+            "trans": "消息数(24H)",
+            "count": "消息总笔数",
+            "holder": "活跃矿工数(24H)",
+            "reward": "每区块奖励",
+            "24minerReward": "平均挖矿收益(24H)",
+            "product": "近24h产出量",
+            "pledgePerSector": "当前扇区质押量",
+            "networkPledgedBalance": "FIC质押量"
+        }
+    },
+    "baseinfo": {
+        "newblock": "最新爆块",
+        "time": "最新爆块时间",
+        "tps": "tps",
+        "avg_time": "平均出块时间",
+        "tps_tips": "tps=近24小时交易笔数\u002F24小时",
+        "avg_block_tips": "平均出块时间=24小时\u002F最新爆块前24小时出块数"
+    },
+    "coininfo": {
+        "nameEn": "英文名",
+        "nameCn": "中文名",
+        "issueDate": "发行时间",
+        "algorithm": "加密算法",
+        "codeLang": "源代码语言",
+        "icoStart": "ICO开始日期",
+        "icoEnd": "ICO结束时间",
+        "consensusMethod": "共识算法",
+        "isToken": "是否是代币",
+        "mineable": "是否可挖矿",
+        "homeEmail": "官方Email",
+        "homePageUrl": "官方网站",
+        "erc20Addr": "ETH合约地址",
+        "giuhubUrl": "Github链接",
+        "wpUrl": "白皮书",
+        "bitcointalkLink": "Bitcointalk链接",
+        "twitterLink": "Twitter链接",
+        "facebookLink": "Facebook链接",
+        "youtubeLink": "YouTube链接",
+        "blockWeb": "区块网站",
+        "volume24": "24小时成交额",
+        "circul": "流通量",
+        "supply": "总发行量",
+        "marketCapUsd": "流通市值",
+        "more": "展开",
+        "less": "收起",
+        "rank": "排名",
+        "sum": "交易额",
+        "chartTitle": {
+            "market": "占全球总市值",
+            "circul": "流通率",
+            "turn": "换手率"
+        }
+    },
+    "blockList": {
+        "height": "区块高度",
+        "miner": "播报方",
+        "time": "时间",
+        "size": "大小",
+        "fee": "交易费",
+        "reward": "爆块奖励",
+        "transNum": "交易笔数",
+        "amount": "交易总额",
+        "hash": "区块哈希",
+        "title": "最新爆块",
+        "gasused": "Gas使用量",
+        "id": "区块ID"
+    },
+    "more": "查看更多",
+    "time": "时间",
+    "size": "大小",
+    "pending": {
+        "hash": "交易哈希",
+        "time": "时间",
+        "fee": "交易费",
+        "from": "从",
+        "to": "到",
+        "gasPrice": "Gas价格",
+        "gasLimit": "Gas限额",
+        "amount": "交易额"
+    },
+    "uncleblocklist": {
+        "height": "区块高度",
+        "uncle": "叔块",
+        "title": "叔块",
+        "miner": "播报方",
+        "time": "时间",
+        "gasused": "Gas使用量",
+        "reward": "叔块奖励"
+    },
+    "transaction": {
+        "title": "最新交易",
+        "type": "交易类型",
+        "hash": "交易哈希",
+        "time": "时间",
+        "gasPrice": "Gas价格",
+        "gasLimit": "Gas限额",
+        "from": "从",
+        "to": "到",
+        "transAmount": "交易额",
+        "fee":"手续费",
+        "fic": {
+            "title": "最新消息"
+        },
+        "message": "消息"
+    },
+    "newAddress": {
+        "title": "最新地址",
+        "address": "地址",
+        "time": "首笔交易时间",
+        "height": "区块高度",
+        "num": "交易笔数",
+        "count": "余额",
+        "fic": {
+            "title": "最新账户",
+            "address": "账户地址"
+        }
+    },
+    "block": {
+        "title": "区块信息",
+        "mount": "交易数",
+        "volume": "交易额",
+        "LowestGasPrice": "最低Gas价格",
+        "TransactionFee": "交易费",
+        "Confirmations": "确认数",
+        "MiningDifficulty": "挖矿难度",
+        "TransactionsCount": "交易数量",
+        "PreviousBlock": "上一个区块",
+        "NextBlock": "下一个区块",
+        "Transactions": "交易",
+        "TransactionsAmount": "交易数量",
+        "GasUsed": "Gas 使用量",
+        "GasLimit": "Gas 限额",
+        "TotalDifficulty": "总难度",
+        "BlockReward": "区块奖励",
+        "UnclesReward": "叔块奖励",
+        "UncleInclusionRewards": "包含叔块奖励",
+        "MinedBy": "播报方",
+        "UncleHeight": "叔块高度",
+        "Sha3Uncles": "Sha3Uncles",
+        "ExtraData": "区块附加数据",
+        "UncleHash": "叔块哈希",
+        "winner": "播报方",
+        "reward": "出块奖励"
+    },
+    "chartInfo": {
+        "marketInfo": "市值与行情",
+        "blockInfo": "区块信息",
+        "netInfo": "网络状态",
+        "miner": "挖矿奖励",
+        "transInfo": "交易信息",
+        "activity": "活跃度",
+        "circul": "流通量",
+        "gasInfo":"Gas相关",
+        "uncle":"叔块",
+        "title": {
+            "totalGasUsed": "每日Gas消耗总量 (个)",
+            "gasPrice": "每日平均Gas价格 (Wei)",
+            "gasLimit": "每日平均Gas限额 (个)",
+            "gasUsed": "每日平均Gas使用总量 (个)",
+            "blockNum": "每日区块总数",
+            "uncleBlockNum": "每日叔块总数",
+            "newAnd": "新增地址数",
+            "coinPrice": "每日币价 (美元)",
+            "dailyAmountNum": "每日交易笔数",
+            "dailyTotalAmount": "每日交易额",
+            "blockReward": "每日挖矿奖励",
+            "blockSize": "区块大小 (Byte)",
+            "blockTime": "出块耗时 (秒)",
+            "dailySupply": "总产出量",
+            "unconfirmTrans": "未确认交易",
+            "dailyHashrate": "每日平均算力",
+            "dailyDiff": "挖矿难度",
+            "daily_uncle_total_mined_coin": "每日叔块已挖出货币总额",
+            "dailyUncleReward": "每日叔块奖励金额",
+            "dailyFee": "每日手续费总和",
+            "dailyRewardNopow": "每日区块奖励",
+            "dailyMinedCoin": "已挖出数量"
+        }
+    },
+    "tokenlist": {
+        "title":"代币",
+        "name": "名称",
+        "shortName": "简称",
+        "fullName": "全称",
+        "supply": "发行量 ",
+        "trans": "Token交易",
+        "type": "类型",
+        "hash": "哈希",
+        "creator": "发行人",
+        "all": "所有",
+        "tokens": "代币",
+        "token": "代币",
+        "price": "价格",
+        "24hVomule": "成交量(24小时)",
+        "market": "市值",
+        "holder": "持有人",
+        "search": "搜索代币",
+        "height":"区块高度",
+        "from": "从",
+        "to": "到",
+        "amount":"交易总额",
+        "time":"时间"
+
+    },
+    "Transaction": {
+        "title": "交易信息",
+        "back": "返回交易首页",
+        "backpending": "返回待确认交易首页",
+        "id": "ID",
+        "nonce": "消息序号",
+        "Transaction": "交易哈希",
+        "AmountTransacted": "交易总额",
+        "Included": "所在块",
+        "Time": "时间",
+        "TransactionFee": "交易费",
+        "BlockHash": "区块",
+        "BlockHeight": "区块高度",
+        "Fee": "手续费",
+        "TransactionStatus": "交易状态",
+        "reason": "失败原因",
+        "GasUsed": "Gas使用量",
+        "GasLimit": "Gas限额",
+        "GasPrice": "Gas价格",
+        "Confirmations": "确认数",
+        "Type": "交易类型",
+        "sysFee": "系统费用",
+        "netFee": "网络费用",
+        "tokenHolder": "Token持有者",
+        "callTransfer": "合约调用转帐",
+        "tokenTransfer": "TOKEN转帐",
+        "success": "成功",
+        "fail": "失败",
+        "maxCpuUsage": "最高CPU使用量",
+        "maxNetUsage": "最高带宽使用量",
+        "signatures": "交易签名",
+        "data": "数据",
+        "Comment": "备注",
+        "lookTxs": "查看此交易包含的合约转账",
+        "inputdata": "数据输入",
+        "withdraw": "提现",
+        "action": "首个动作类型",
+        "Action": "动作",
+        "Normal": "普通",
+        "Delegate": "委托",
+        "Other": "其它",
+        "Proposer": "提议者",
+        "more": "查看全部动作",
+        "fic": {
+            "title": "消息详情",
+            "id": "消息CID",
+            "type": "类型",
+            "status": "状态"
+        },
+        "block_hash": "区块哈希",
+        "size": "区块大小",
+        "miner_address": "矿工地址"
+    },
+    "address": {
+        "title": "地址信息",
+        "lookToken": "查看代币余额",
+        "from": "从",
+        "to": "到",
+        "ContractAddr": "合约地址",
+        "NormalAddr":"普通地址",
+        "Balance": "余额",
+        "Transactions": "交易",
+        "tokenBalance": "代币余额",
+        "TotalBalance": "余额",
+        "TotalTransactions": "交易笔数",
+        "Rank": "排行",
+        "callTransfer":"合约调用转账",
+        "MinedBlocks":"挖矿区块"
+    },
+    "utils": {
+        "copy": "复制",
+        "copied": "已复制",
+        "code": "二维码",
+        "open": "展开",
+        "close": "收起"
+    },
+    "altTitle":{
+        "home":{
+            "title":"以太坊ETH浏览器",
+            "alt":"以太坊浏览器查询以太坊链上的所有数据,包括区块高度,最新爆快,最新交易,ETH代币转账。"
+        },
+        "largetxs":{
+            "title":"以太坊浏览器大额监测",
+            "alt":"以太坊浏览器实时追踪以太坊大额交易情况，通过改变阈值获得大额交易的变化，查看大额交易的详细信息，包括交易哈希，区块高度，转入地址和转出地址，以及交易金额等。"
+        },
+        "charts":{
+            "title":"以太坊浏览器链上数据图表",
+            "alt":"block.org以太坊浏览器图表参数展示以太坊链上数据图表，包括以太坊每日市值与行情，区块大小，出块时间，算力，挖矿难度，挖矿奖励，交易手续费，交易金额，全节点等20多个图表信息。"
+        },
+        "blockList":{
+            "title":"以太坊浏览器最新爆块查询",
+            "alt":"block.org以太坊浏览器展示以太坊最新爆块，包括以太坊最新爆块时间，tps, 平均出块时间，区块高度，播报方，大小，奖励，交易笔数，交易总额。"
+        },
+        "newTxs":{
+            "title":"以太坊浏览器交易查询",
+            "alt":"block.org以太坊浏览器可查询以太坊最新交易信息，包括交易额，交易账户，交易额等信息。"
+        },
+        "pending":{
+            "title":"以太坊浏览器待确认交易查询",
+            "alt":"block.org以太坊浏览器可查询以太坊待确认交易，包括交易的交易数，交易额，Token交易笔数，总合约交易笔数等。"
+        },
+        "newAddress":{
+            "title":"以太坊浏览器地址查询",
+            "alt":"block.org以太坊浏览器可查询以太坊最新交易地址，地址内的交易信息，区块高度，时间和交易金额等。"
+        },
+        "token":{
+            "title":"以太坊浏览器代币及代币转账查询",
+            "alt":"block.org以太坊浏览器可查询ETH代币名称，代币发行量，代币的交易信息。"
+        }
+
+    }
+}

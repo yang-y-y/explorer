@@ -1,0 +1,268 @@
+.home {
+  padding-top: 200px;
+}
+.home h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #000;
+  margin-bottom: 70px;
+}
+@media (max-width: 768px) {
+  .home h1 {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+}
+.home .searchLarge {
+  margin-bottom: 150px;
+  padding: 0 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .searchLarge input[type=search] {
+  width: 76%;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 10px;
+  padding: 0 20px;
+  font-size: 18px;
+  background: none;
+  outline: none;
+  border: 1px solid #CBCBCB;
+}
+.home .searchLarge input[type=search]:focus {
+  border: 1px solid #000;
+}
+.home .searchLarge input[type=search] #search-clear {
+  cursor: pointer !important;
+}
+.home .searchLarge input[type=search]::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #9F9F9F;
+  font-size: 16px;
+}
+.home .searchLarge input[type=search]::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #9F9F9F;
+  font-size: 16px;
+}
+.home .searchLarge input[type=search]:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #9F9F9F;
+  font-size: 16px;
+}
+.home .searchLarge input[type=button] {
+  width: 20%;
+  height: 70px;
+  background: #4878FF;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+.home .searchLarge input[type=button]:hover {
+  opacity: 0.9;
+}
+.dataview {
+  margin-bottom: 30px;
+}
+.dataview .ivu-col {
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  padding: 22px 30px;
+  flex: 0 0 49.29%;
+}
+.dataview .ivu-col h2 {
+  margin-bottom: 22px;
+  color: #242735;
+  font-weight: bold;
+}
+.dataview .ivu-col ul {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+.dataview .ivu-col ul li {
+  display: flex;
+  justify-content: space-between;
+  line-height: 28px;
+  height: 28px;
+}
+.dataview .ivu-col ul li:nth-child(even) {
+  padding-left: 40px;
+}
+.dataview .ivu-col ul li:nth-child(odd) {
+  padding-right: 40px;
+}
+.dataview .ivu-col ul li b {
+  max-width: 160px;
+  display: inline-block;
+  font-weight: normal;
+}
+.dataview .ivu-col ul li span {
+  font-weight: bold;
+}
+.blockDetail h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  word-break: normal;
+}
+.blockDetail h4 span {
+  display: inline-block;
+  min-width: 220px;
+}
+.blockDetail .hash {
+  word-wrap: break-word;
+  word-break: normal;
+}
+.blockDetail .infos ul {
+  padding: 20px 0;
+}
+.blockDetail .infos ul li {
+  display: flex;
+  justify-content: flex-start;
+}
+.blockDetail .infos ul li .types {
+  padding: 5px 0;
+  width: 20%;
+  min-width: 150px;
+  position: sticky;
+  left: 0;
+  z-index: 3;
+}
+.blockDetail .infos ul li .vals {
+  word-wrap: break-word;
+  word-break: normal;
+  display: inline-block;
+  padding: 5px 0;
+}
+.blockDetail .infos ul li .vals .success {
+  color: #2CB17C;
+  background-color: #E3F4EC;
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 4px;
+  padding: 0 8px;
+}
+.blockDetail .infos ul li .vals a {
+  color: #4878FF;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inherit;
+}
+.blockDetail .tabCon .ivu-tabs-bar {
+  padding-left: 30px;
+}
+.blockDetail .ivu-table-header {
+  border-top: 1px solid #ececec;
+}
+.blockDetail .pageCon {
+  padding-top: 20px;
+}
+.chartinfo {
+  padding: 20px 0;
+}
+.chartinfo .container {
+  display: flex;
+}
+.chartinfo .view {
+  width: 390px;
+  height: 215px;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  margin-right: 15px;
+  overflow: hidden;
+}
+.chartinfo .view:last-child {
+  margin-right: 0;
+}
+.chartinfo .view .chartTitle {
+  padding: 14px 20px;
+  font-size: 16px;
+  color: #242735;
+  font-weight: 500;
+}
+.tokentxns .pageCon {
+  padding-top: 20px;
+}
+.addressPage h4 i {
+  font-size: 14px;
+  font-style: normal;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 5px;
+  position: relative;
+  cursor: pointer;
+}
+.addressPage .ewmcode img {
+  position: absolute;
+  left: -50%;
+  top: 24px;
+  z-index: 10;
+}
+.wikiList {
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 33.333%);
+}
+.wikiList .ivu-card {
+  margin-right: 10px;
+}
+.searchPage {
+  position: relative;
+  padding-top: 70px;
+}
+.searchPage::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  background-color: #f8f8f8;
+}
+.searchPage .searchForm {
+  width: 740px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.searchPage .searchForm .ivu-input-group {
+  display: flex;
+  align-items: center;
+}
+.searchPage .searchForm .ivu-input {
+  height: 70px;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.searchPage .searchForm .ivu-input-search {
+  border-radius: 10px;
+  height: 70px;
+  line-height: 70px;
+}
+.searchPage .searchForm .ivu-input-search .ivu-icon-ios-search {
+  font-size: 30px;
+}
+.searchPage .searchForm .ivu-input-search::before {
+  display: none;
+}
+.searchPage .searchForm .ivu-input-group-append,
+.searchPage .searchForm .ivu-input-group > .ivu-input:last-child {
+  border-bottom-left-radius: 10px !important;
+  border-top-left-radius: 10px !important;
+  width: 70px;
+  padding: 5px 20px 0px !important;
+}
+.searchPage .searchResult {
+  text-align: center;
+}
+@media screen and (max-width: 1170px) {
+  .home {
+    padding-top: 0;
+  }
+}

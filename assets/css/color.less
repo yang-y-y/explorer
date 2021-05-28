@@ -1,0 +1,223 @@
+@bgcolor:#fff;
+@bordercolor:#ececec;
+@fontcolor:#242735;
+@active-color:#242735;
+@link-color:#242735;
+@link-hover:#242735;
+@link-blue:#4878FF;
+@bg-hover:#fafafa;
+@bordercolor2:#9A9898;
+@success:#2CB17C;
+@successBg:#E3F4EC;
+@mbHdbg:#fff;
+@borderColorActive:#222;
+@boxshadow3:0px 0px 10px 0px rgba(72,120,254,70%);
+.theme(
+    @bgcolor:#fff,
+    @bordercolor:#DCDCDC,
+    @fontcolor:#242735,
+    @active-color:#242735,
+    @link-color:#242735,
+    @link-hover:#242735,
+    @link-blue:#4878FF,
+    @bg-hover:#fafafa,
+    @bordercolor2:#9A9898,
+    @success:#2CB17C,
+    @successBg:#E3F4EC,
+    @fontcolor2:#161f3a,
+    @bghover:#fbfcff,
+    @rgbaBg:rgba(255,255,255,90%),
+    @boxshadow: 0 5px 15px rgba(0, 0, 0, 0.3),
+    @active-color2:#fff,
+    @boxshadow2:0 5px 15px rgba(26, 79, 226, 0.685),
+    @boxshadow3:none,
+    @mbHdbg:#fff,
+    @borderColorActive:#242735
+) {
+   
+   background-color: @bgcolor;
+   color:@fontcolor;
+   a{
+       color: @fontcolor;;
+       &:hover{
+           color: @link-hover;
+       }
+   }
+   .ivu-table{
+        color:@fontcolor;
+        background-color: @bgcolor;
+        &::before{
+            background-color: @bordercolor;
+        }
+        .ivu-table-header{
+            th{
+                background-color: @bgcolor !important;
+            }
+        }
+        th,td{
+            background-color: @bgcolor;
+            border-color: @bordercolor;
+        }
+        tr.ivu-table-row-hover td{
+            background-color: @bghover;
+        }
+    }
+    .topbar{
+        border-color: @bordercolor;
+    }
+    .head{
+        .container{
+            border-color: @bordercolor;
+        }
+    }
+    .home .searchLarge input[type=search]{
+        border-color: @bordercolor;
+    }
+    .home h1{
+        color: @fontcolor;
+    }
+    .footer{
+        border-color:@bordercolor ;
+    }
+    .title-global{
+        border-color: @bordercolor;
+        h2{
+            color:@fontcolor;
+            &::before{
+                background-color: @fontcolor;
+            }
+        }
+    }
+    .dataview{
+        .ivu-col{
+            border-color: @bordercolor;
+            h2{
+                color:@fontcolor;
+            }
+        }
+    }
+    .ivu-spin-fix{
+        background-color: @rgbaBg
+    }
+    .blockDetail .ivu-table-header{
+        border-color: @bordercolor;
+    }
+    .navs .m-nav ul li.active a, .navs .m-nav ul li.in a{
+        color: @active-color;
+    }
+    .navs .m-nav ul li.active::before, .navs .m-nav ul li.in::before{
+        background-color:@active-color;
+    }
+    .navs .m-nav ul li.active{
+        .smlist{
+            a{
+                color: @fontcolor2;
+            }
+        }
+    }
+    .ivu-input{
+        background-color: @bgcolor;
+        border-color: @bordercolor !important;
+        color: @active-color;
+
+    }
+    .small-search .ivu-input-group-prepend{
+        background-color: @bgcolor;
+        border-color: @bordercolor 
+    }
+    .ivu-select{
+        color: @fontcolor;
+
+    }
+    .topbar .rightView .ivu-dropdown-rel a{
+        color: @fontcolor;
+    }
+    .chartinfo .view .chartTitle{
+        color: @fontcolor;
+
+    }
+    .chartinfo .view{
+        border-color: @bordercolor 
+    }
+    .ivu-tabs{
+        color: @fontcolor;
+    }
+    .ivu-tabs-nav .ivu-tabs-tab:hover{
+        color: @active-color
+    }
+    .navs .smlist{
+        box-shadow: 0px 0px 15px 1px @boxshadow;
+    }
+    .home .ivu-table-header{
+        border-color: @bordercolor  !important
+
+    }
+    .tokenname a{
+        color: @fontcolor !important;
+       
+
+    }
+    .ivu-page-item a{
+        color: @fontcolor2;
+    }
+    .ivu-page-next a, .ivu-page-prev a{
+        color: @fontcolor2;
+    }
+    .ivu-page-disabled{
+        a{
+            color: @fontcolor;
+        }
+    }
+    .ivu-page-item-active{
+        background-color:  @link-blue;
+       a{
+           color:@active-color2;
+       }
+    }
+    .ivu-page-item-jump-next:hover i:first-child, .ivu-page-item-jump-prev:hover i:first-child{
+        color: @link-blue !important;
+    }
+    .mobile-menu {
+        background-color: @mbHdbg;
+        .mobile-head{
+            border-color: @bordercolor;
+        }
+        
+    }
+    .highcharts-background{
+        fill:  @bgcolor;
+       
+    }
+    .highcharts-yaxis-grid{
+        stroke:  @bordercolor !important;
+    }
+    .home {
+        .searchLarge {
+            input[type=search]{
+                color: @fontcolor;
+                &:focus{
+                    border-color: @borderColorActive;
+                    box-shadow:@boxshadow3;
+                }
+            }
+            input[type=button]:hover {
+                box-shadow: @boxshadow3;
+                opacity: 0.9;
+            }
+
+        }
+    }
+    .searchPage{
+        &::before{
+            background-color: @bordercolor;
+        }
+        .ivu-input{
+            border-color: @bordercolor !important;
+            &:focus{
+                border-color: @borderColorActive !important;
+                box-shadow: @boxshadow3;
+            }
+        }
+    }
+    
+}

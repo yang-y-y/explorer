@@ -1,0 +1,430 @@
+{
+    "head": {
+        "title": "Block.org - the largest Blockchain Multi-crypto Block Explorer",
+        "meta": {
+            "keywords": "Bitcoin Block Explorer, Block Explorer, ETC Block Explorer, ",
+            "description": "The biggest blockchain service platform enables you to search blockchain transactions, blockchain exchanges, bitcoin hashrate, coin market cap."
+        },
+        "api": {
+            "title": "Block.org Blockchain API Data Service for Multi-crypto",
+            "keywords": "Block Explorer API, API data service",
+            "description": "Block.org Blockchain Exploerer provide API data service for users with different kinds of API interfaces"
+        },
+        "search": {
+            "title": "Block.org Block Explorer - The trust Multi-crypto Data Service Platform",
+            "keywords": "API data service, block explorer, btc block explorer, eth Block Explorer, ",
+            "description": "Block.org Block Explorer is the first Block Explorer which supports multi-cryptocurrency query, allows you to search the wallet addresses, transactions, latest blocks, block heights, and other information of more than 500 types of mainstream cryptocurrencies like BTC, BCH, ETH, ERC20 Token, LTC, ZCASH, DASH etc."
+        },
+        "address": {
+            "title": "Block Explorer to Search Block Addresses, Block Transaction, Historial Transactions",
+            "keywords": "Bitcoin explorer, block Address, blockchain address, Address explorer",
+            "description": "Block Explorer to search block addresses, block historial transactions which connects you to the world of finance and allows you receive, send multi crypto through the wallet address"
+        },
+        "tx": {
+            "title": "Transactions",
+            "keywords": "ltc transaction explorer, bch transaction explorer, eth transaction explorer",
+            "description": "Quick and easy to search blockchain and cryptocurrency transactions with Block.org Blackchain explorer"
+        },
+        "block": {
+            "title": "Block Explorer to Search Block Height, Transaction",
+            "keywords": "block height, cinder blick height, block size, block harsh, comfirmations, height block",
+            "description": "Block explorer enables you to search latest blockchain block, block size, block harsh, block comfirmations."
+        },
+        "coinList": {
+            "title": "Block Explorer Lets You Search Digital Coins - BTC, ETC, ETH, BCH, LTC, TEH TRON, Dash, Neo...",
+            "keywords": "Blockchain Search Engine,Block Hash Query, Transaction Hash Query, Block.org Block Explorer",
+            "description": "Token Block Explorer allows you to search the wallet addresses, transactions, latest blocks, block heights, and other information of more than 500 types of mainstream cryptocurrencies like BTC, BCH, ETH, ERC20 Token, LTC, ZCASH, DASH etc.。"
+        },
+        "coinDetail": {
+            "title": "Block.org Explorer for Multi Cryptocurrencies",
+            "keywords": "BTC explorer, ETH block, LTC block, BCH explorer, VTC block explorer, NMC block wallet, RVN blockchain, DGB, GRS, VIA",
+            "description": "Block Explorer lets you search all the cryptocurrency like bitcoin, litecoin and other famous coins "
+        },
+        "tokenList": {
+            "title": "Block.org Block Explorer for Blockchain Token",
+            "keywords": "tokens, what is a token, coin tokens, crypto token, blockchain tokens, ",
+            "description": "cryptocurrency or Bitcoin can also called a token for block chain, that you can exchange them with private key or public key"
+        },
+        "tokenDetail": {
+            "title": "Token - Token List and Token Transaction on",
+            "keywords": "Crypto token, private keys, digital certificates, digital signature",
+            "description": "Using the digital signature and private keys and publick keys for block chain"
+        },
+        "uncleBlockList": {
+            "title": "Uncle Block Height",
+            "keywords": "Block Height, uncle height",
+            "description": "Block Height"
+        },
+        "uncleBlockDetail": {
+            "title": "Uncles Hash",
+            "keywords": "Uncles Hash",
+            "description": "Bblock height, height block, cinder blick height"
+        },
+        "txDetail": {
+            "title": "Transactions",
+            "keywords": "ltc transaction explorer, bch transaction explorer, eth transaction explorer",
+            "description": "Quick and easy to search blockchain and cryptocurrency transactions with Block.org Blackchain explorer"
+        }
+    },
+    "headerTab": {
+        "home": "Home",
+        "charts": "Charts",
+        "blockList": "Block List",
+        "pending": "Pending",
+        "token": "Token",
+        "search": "Search",
+        "api": "APIs",
+        "lang": "Language",
+        "explorer": "Explorer",
+        "newAddress": "Address",
+        "newTxs": "Transaction",
+        "largetxs": "Whale Tracking",
+        "topaccount": "Rich List",
+        "miner": "Miner Rank"
+    },
+    "headerMore": {
+        "blocklist": "Block Info",
+        "uncleblocklist": "Uncle Info"
+    },
+    "indexInfo": {
+        "coin": "Explorer",
+        "price": "Price",
+        "updown24": "Up(24h)",
+        "latestBlock": "Latest Block",
+        "time": "Time",
+        "fee": "Fee",
+        "AmountTransacted": "Amount Transacted",
+        "mechanism": "Type"
+    },
+    "coinPrice": {
+        "latestBlock": "Latest Block",
+        "price": "Price",
+        "marketValue": "Market Value",
+        "updown24": "Up(24h)",
+        "btcys": "BTC Advantage",
+        "trans24": "Transactions",
+        "hashRate": "Hashrate",
+        "diff": "Difficulty",
+        "rptrans24": "Messages(24H)",
+        "volume24": "Volume(24h)",
+        "turnover": "Turnover Rate",
+        "count": "Tx Counts",
+        "neoholder": "NEO Holders",
+        "gasholder": "GAS Holders",
+        "size": "Size",
+        "transMount24": "Transaction Volume",
+        "transMount": "Transaction Volume",
+        "Circulate": "Supply",
+        "turnover24": "Turnover Rate(24H)",
+        "holder": "Holders",
+        "vote": "Shares",
+        "inflation": "Inflation",
+        "circul": "Circulating Supply",
+        "marketData": "Market Data",
+        "blockData": "Block Data"
+    },
+    "baseinfo": {
+        "newblock": "Block Info",
+        "time": "Time",
+        "tps": "tps",
+        "avg_time": "Average block time",
+        "tps_tips": "tps=transaction counts / 24hours",
+        "avg_block_tips": "Avg. Block Time = 24h / Blocks in the Last 24h"
+    },
+    "coininfo": {
+        "nameEn": "English Name",
+        "nameCn": "Chinese Name",
+        "issueDate": "Issue Date",
+        "algorithm": "Encryption Algorithm",
+        "codeLang": "Coding Language",
+        "icoStart": "Start Time",
+        "icoEnd": "End Time",
+        "consensusMethod": "Consensus Method",
+        "isToken": "Token",
+        "mineable": "Mineable",
+        "homeEmail": "Official Email",
+        "homePageUrl": "Official Website",
+        "erc20Addr": "ETH Contract Address",
+        "giuhubUrl": "Github",
+        "wpUrl": "Whitepaper",
+        "bitcointalkLink": "Bitcointalk",
+        "twitterLink": "Twitter",
+        "facebookLink": "Facebook",
+        "youtubeLink": "YouTube",
+        "blockWeb": "Blockchain Explorer",
+        "volume24": "Volume(24h)",
+        "circul": "Circulating Supply",
+        "supply": "Max Supply",
+        "marketCapUsd": "Market Cap(USD)",
+        "more": "More",
+        "less": "Less",
+        "rank": "Rank",
+        "sum": "Volume",
+        "chartTitle": {
+            "market": "Market Share",
+            "circul": "Circulating Ratio",
+            "turn": "Turnover Ratio"
+        }
+    },
+    "blockList": {
+        "height": "Height",
+        "miner": "Miner",
+        "time": "Time",
+        "size": "Size",
+        "fee": "Txs Fee",
+        "reward": "Reward",
+        "transNum": "Txs Counts",
+        "amount": "Volume",
+        "hash": "BlockHash",
+        "title": "Block Info",
+        "gasused": "Gas Used",
+        "id": "ID"
+    },
+    "more": "View All",
+    "time": "Time",
+    "size": "Size",
+    "pending": {
+        "hash": "Hash",
+        "time": "Time",
+        "fee": "Fee",
+        "from": "From",
+        "to": "To",
+        "gasPrice": "GasPrice",
+        "gasLimit": "GasLimit",
+        "amount": "Amount"
+    },
+    "uncleblocklist": {
+        "height": "Height",
+        "uncle": "Uncle",
+        "title": "Uncle Info",
+        "miner": "Miner",
+        "time": "Time",
+        "gasused": "Gas Used",
+        "reward": "Uncle Rewards"
+    },
+    "transaction": {
+        "title": "Latest Txs",
+        "type": "Type",
+        "hash": "Hash",
+        "time": "Time",
+        "gasPrice": "GasPrice",
+        "gasLimit": "GasLimit",
+        "from": "From",
+        "to": "To",
+        "transAmount": "Transaction Volume",
+        "fee":"Fee",
+        "fic": {
+            "title": "Latest Message"
+        },
+        "message": "Message"
+    },
+    "newAddress": {
+        "title": "Addresses",
+        "address": "Address",
+        "time": "First Tx",
+        "height": "Height",
+        "num": "Tx Count",
+        "count": "Balance",
+        "fic": {
+            "title": "Account",
+            "address": "Address"
+        }
+    },
+    "block": {
+        "title": "Block Info",
+        "mount": "Transactions",
+        "volume": "volume",
+        "LowestGasPrice": "Lowest GasPrice",
+        "TransactionFee": "Transaction Fees",
+        "Confirmations": "Confirmations",
+        "MiningDifficulty": "Mining Difficulty",
+        "TransactionsCount": "Transaction Counts",
+        "PreviousBlock": "Previous Block",
+        "NextBlock": "Next Block",
+        "Transactions": "Transactions",
+        "TransactionsAmount": "Transaction Counts",
+        "GasUsed": "Gas Used",
+        "GasLimit": "Gas Limit",
+        "TotalDifficulty": "Total Difficulty",
+        "BlockReward": "Block Reward",
+        "UnclesReward": "Uncle Rewards",
+        "UncleInclusionRewards": "Uncle Inclusion Rewards",
+        "MinedBy": "Mined By",
+        "UncleHeight": "Uncle Height",
+        "Sha3Uncles": "Sha3Uncles",
+        "ExtraData": "Extra Data",
+        "UncleHash": "Uncle Hash",
+        "winner": "Mined By",
+        "reward": "Reward"
+    },
+    "chartInfo": {
+        "marketInfo": "MarketInfo",
+        "blockInfo": "Blocks",
+        "netInfo": "Network State",
+        "miner": "Miner",
+        "transInfo": "Transactions",
+        "activity": "Activity",
+        "circul": "Circulating Supply",
+        "gasInfo": "GasInfo",
+        "uncle": "Uncle",
+        "title": {
+            "totalGasUsed": "Gas Consumption (Unit)",
+            "gasLimit": "Daily average Gas limits (Unit)",
+            "gasPrice": "Daily average Gas price (Wei)",
+            "gasUsed": "Daily average Gas used (Unit)",
+            "blockNum": "Daily block number",
+            "uncleBlockNum": "Daily uncle block number",
+            "newAnd": "New Address",
+            "marketInfo": "Daily Market Cap (USD)",
+            "BigmarketInfo": "Daily Market Cap (100 million USD)",
+            "coinPrice": "Daily Price (USD)",
+            "dailyAmountNum": "Daily Transaction Counts",
+            "dailyTotalAmount": "Daily trade volume",
+            "blockReward": "Daily mining revenue",
+            "minerReward": "Miner Revenue Index",
+            "blockTime": "Period of Block Generation (second)",
+            "blockSize": "Block Size (Byte)",
+            "dailySupply": "Daily Supply",
+            "dailyDiff": "Mining difficulty",
+            "daily_uncle_total_mined_coin": "Total Daily Uncle Block Outputs (ETH)",
+            "dailyUncleReward": "Uncle Block Reward",
+            "dailyFee": "Fee (24h)",
+            "dailyChainSize": "Full Node Size (KB)"
+        }
+    },
+    "tokenlist": {
+        "title": "Token",
+        "name": "Name",
+        "shortName": "Abbr.",
+        "fullName": "Full Name",
+        "supply": "Total Amount ",
+        "trans": "Token Transfers",
+        "type": "Type",
+        "hash": "Hash",
+        "creator": "Creator",
+        "all": "All",
+        "tokens": "Tokens",
+        "token": "Token",
+        "price": "Price",
+        "24hVomule": "Volume(24H)",
+        "market": "Market Cap",
+        "holder": "Holders",
+        "search": "Search Token",
+        "height":"Height",
+        "from":"From",
+        "to":"To",
+        "amount":"Amount",
+        "time":"Time"
+    },
+    "Transaction": {
+        "title": "Transaction Info",
+        "back": "Back to Transactions",
+        "backpending": "Back to Pending",
+        "id": "ID",
+        "nonce": "Nonce",
+        "Transaction": "Transaction",
+        "AmountTransacted": "Amount Transacted",
+        "Included": "Included in Block",
+        "Time": "Time",
+        "TransactionFee": "Transaction Fees",
+        "BlockHash": "Block Hash",
+        "BlockHeight": "Block Height",
+        "Fee": "Fee",
+        "TransactionStatus": "Transaction Receipt Status",
+        "reason": "Reason",
+        "GasUsed": "Gas Used",
+        "GasLimit": "Gas Limit",
+        "GasPrice": "Gas Price",
+        "Confirmations": "Confirmations",
+        "Type": "Type",
+        "sysFee": "System Fee",
+        "netFee": "Network Fee",
+        "tokenHolder": "Token Holders",
+        "callTransfer": "CALL TRANSFER",
+        "tokenTransfer": "TOKEN TRANSFER",
+        "success": "Success",
+        "fail": "Fail",
+        "maxCpuUsage": "Max Cpu Usage",
+        "maxNetUsage": "Max Net Usage",
+        "signatures": "Signatures",
+        "data": "Data",
+        "Comment": "Comment",
+        "lookTxs": "Smart Contract Transfers",
+        "inputdata": "Input Data",
+        "withdraw": "withdraw",
+        "action": "Type",
+        "Action": "Action",
+        "Normal": "Normal",
+        "Delegate": "Delegate",
+        "Other": "Other",
+        "Proposer": "Proposer",
+        "more": "More",
+        "fic": {
+            "title": "Message Details",
+            "id": "Message ID",
+            "type": "Type",
+            "status": "Status"
+        },
+        "block_hash": "Hash",
+        "size": "Size",
+        "miner_address": "Miner"
+    },
+    "address": {
+        "title": "Address Info",
+        "lookToken": "Token Balance",
+        "from": "From",
+        "to": "To",
+        "ContractAddr": "Contract Address",
+        "NormalAddr":"Normal Address",
+        "Balance": "Balance",
+        "Transactions": "Transactions",
+        "tokenBalance": "Token Balance",
+        "TotalBalance": "Balance",
+        "TotalTransactions": "Transactions",
+        "Rank": "Rank",
+        "callTransfer": "Call Transfers",
+        "MinedBlocks": "Mined Blocks"
+    },
+    "utils": {
+        "copy": "Copy",
+        "copied": "Copied",
+        "code": "QR code",
+        "open": "More",
+        "close": "Less"
+    },
+    "altTitle":{
+        "home":{
+            "title":"Ethereum Explorer",
+            "alt":"Ethereum Explorer to search all the data of Ethereum Blockchain including the block height, latest block, new transaction, uncle block, eth smart contract."
+        },
+        "largetxs":{
+            "title":"ETH Block Explorer Largetxs Tracking",
+            "alt":"ETH Block Explorer Largetxs Tracking helps users to monitor."
+        },
+        "charts":{
+            "title":"ETH Block Explorer Data Charts",
+            "alt":"ETH block explorer of data charts presents users the 20+ charts for all the information including block size, block time, hashrate, transaction accounts and so on."
+        },
+        "blockList":{
+            "title":"ETH Block Explorer Latest Block",
+            "alt":"ETH Block Explorer Latest Block enable users to look up the latest eth block, tps, block height, hashrate, mining difficulity, mining reward and transaction fee and so on."
+        },
+        "newTxs":{
+            "title":"ETH Block Explorer Transaction",
+            "alt":"ETH Block Explorer Transaction enables you to search latest transaction, transaction fee, transaction account and addresses and so on."
+        },
+        "pending":{
+            "title":"ETH Block Explorer Pending Transaction",
+            "alt":"ETH Block Explorer Pending Transaction could search ETH pending transaction including transaction accounts, pending transaction addresses."
+        },
+        "newAddress":{
+            "title":"ETH Block Explorer Address",
+            "alt":"ETH Block Explorer Addresses."
+        },
+        "token":{
+            "title":"ETH Block Explorer Ethereum Token",
+            "alt":"ETH Block Explorer Ethereum all tokens including token transfer, token banlance"
+        }
+
+    }
+}
