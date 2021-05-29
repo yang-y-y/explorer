@@ -64,7 +64,7 @@ export default {
 			target: 'http://96.9.211.136:8200/api/', // 接口服务器地址
       changeOrigin: true,
 			pathRewrite: {
-				'^/api' : '/'
+				'^/api' : '/',
 			}
 		}
 	},
@@ -85,7 +85,7 @@ export default {
         threshold: 10240, // 对超过10kb的数据进行压缩
         deleteOriginalAssets: false // 是否删除原文件
       })
-
+ 
     ],
     analyze:true, // 检测js包大小
     assetFilter: function(assetFilename) {	    		
