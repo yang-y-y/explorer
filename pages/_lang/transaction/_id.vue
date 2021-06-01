@@ -2,7 +2,7 @@
     <div class="blockPage">
         <Headmobile />
         <Headsearch crumbs="transaction" v-on:handleNodata="isNaNdata"/>
-        <Mynavs page_index='4'/>
+        <mynavs page_index='4'/>
         <Nodata v-if="nodata" v-on:reload="isNaNdata"/>
         <div class="main">
             <Spin size="large" fix v-if="loading"></Spin>
@@ -25,7 +25,7 @@
                             </li>
                             <li>
                                 <div class="types">{{$t('Transaction.Included')}}</div>
-                                <div class="vals"><nuxt-link :to="'/'+this.$route.params.lang+'/'+this.$route.params.explorer+'/block/'+data.block_id">{{data.block_id}}</nuxt-link></div>
+                                <div class="vals"><nuxt-link :to="'/'+this.$route.params.lang+'/block/'+data.block_id">{{data.block_id}}</nuxt-link></div>
                             </li>
                             <li>
                                 <div class="types">{{$t('Transaction.Time')}}</div>
@@ -33,11 +33,11 @@
                             </li>
                             <li>
                                 <div class="types">{{$t('transaction.from')}}</div>
-                                <div class="vals"><nuxt-link :to="'/'+this.$route.params.lang+'/'+this.$route.params.explorer+'/address/'+data.from">{{data.from}}</nuxt-link></div>
+                                <div class="vals"><nuxt-link :to="'/'+this.$route.params.lang+'/address/'+data.from">{{data.from}}</nuxt-link></div>
                             </li>
                             <li>
                                 <div class="types">{{$t('transaction.to')}}</div>
-                                <div class="vals"><nuxt-link :to="'/'+this.$route.params.lang+'/'+this.$route.params.explorer+'/address/'+data.to">{{data.to}}</nuxt-link></div>
+                                <div class="vals"><nuxt-link :to="'/'+this.$route.params.lang+'/address/'+data.to">{{data.to}}</nuxt-link></div>
                             </li>
                             <li>
                                 <div class="types">{{$t('Transaction.AmountTransacted')}}</div>
@@ -112,7 +112,7 @@ export default {
     },
     methods: {
         getDetail(id){
-             this.$axios.get('/'+this.$route.params.explorer+"/transaction/find?hash="+id).then(({data})  => {
+             this.$axios.get('/'+this.$store.state.explorer+"/transaction/find?hash="+id).then(({data})  => {
                 if(data.code != '-1'){
                     this.data = data.data;
                 }else{

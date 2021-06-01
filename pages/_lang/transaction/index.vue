@@ -2,7 +2,7 @@
     <div class="transactionlist">
         <Headmobile />
         <Headsearch crumbs="transaction" v-on:handleNodata="isNaNdata"/>
-        <Mynavs page_index='4'/>
+        <mynavs page_index='4'/>
         <Nodata v-if="nodata" v-on:reload="isNaNdata"/>
         <div class="main" v-else>
             <div class="title-con">
@@ -61,7 +61,7 @@ export default {
               }, [
                   h('nuxt-link',{
                     attrs:{
-                      to:'/'+this.$route.params.lang+'/'+this.$route.params.explorer+"/transaction/"+params.row.hash
+                      to:'/'+this.$route.params.lang+"/transaction/"+params.row.hash
                     }
                   }, params.row.hash)
               ]);
@@ -101,7 +101,7 @@ export default {
               }, [
                   h('nuxt-link',{
                     attrs:{
-                       to:'/'+this.$route.params.lang+'/'+this.$route.params.explorer+"/address/"+params.row.from
+                       to:'/'+this.$route.params.lang+"/address/"+params.row.from
                     }
                   }, params.row.from)
               ]);
@@ -119,7 +119,7 @@ export default {
               }, [
                   h('nuxt-link',{
                     attrs:{
-                      to:'/'+this.$route.params.lang+'/'+this.$route.params.explorer+"/address/"+params.row.to
+                      to:'/'+this.$route.params.lang+"/address/"+params.row.to
                     }
                   }, params.row.to)
               ]);

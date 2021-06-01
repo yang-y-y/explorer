@@ -79,15 +79,15 @@ export default {
       menuData: [
         {
             name:"home",
-            path:'/'+this.$route.params.lang+'/'+this.$route.params.explorer+'/'
+            path:'/'+this.$route.params.lang+'/'
         },
         {
             name:"largetxs",
-            path:'/'+this.$route.params.lang+'/'+this.$route.params.explorer+'/large/'
+            path:'/'+this.$route.params.lang+'/large/'
         },
         {
             name:"charts",
-            path:'/'+this.$route.params.lang+'/'+this.$route.params.explorer+'/charts/'
+            path:'/'+this.$route.params.lang+'/charts/'
         },
         {
             name:"blockList",
@@ -98,8 +98,6 @@ export default {
               path:
                 "/" +
                 this.$route.params.lang +
-                "/" +
-                this.$route.params.explorer +
                 "/block/",
             },
             {
@@ -107,27 +105,25 @@ export default {
               path:
                 "/" +
                 this.$route.params.lang +
-                "/" +
-                this.$route.params.explorer +
                 "/uncleblock/",
             },
           ],
         },
         {
             name:"newTxs",
-            path:'/'+this.$route.params.lang+'/'+this.$route.params.explorer+'/transaction/'
+            path:'/'+this.$route.params.lang+'/transaction/'
         },
         {
             name:"pending",
-            path:'/'+this.$route.params.lang+'/'+this.$route.params.explorer+'/transaction/'
+            path:'/'+this.$route.params.lang+'/transaction/'
         },
         {
             name:"newAddress",
-            path:'/'+this.$route.params.lang+'/'+this.$route.params.explorer+'/address/'
+            path:'/'+this.$route.params.lang+'/address/'
         },
         {
             name:"token",
-            path:'/'+this.$route.params.lang+'/'+this.$route.params.explorer+'/token/'
+            path:'/'+this.$route.params.lang+'/token/'
         },
       ],
     };

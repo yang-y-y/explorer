@@ -1,4 +1,5 @@
 <script>
-import mynavs from '~/pages/_lang/commen/mynavs.vue'
-export default mynavs
+import Mynavs from '~/pages/_lang/commen/navs.vue'
+export default Mynavs
 </script>
+ 

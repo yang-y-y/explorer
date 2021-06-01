@@ -1,5 +1,4 @@
 
-import qs from "qs";
 
 export default function({req, $axios, redirect }) {
     $axios.onRequest(config => {

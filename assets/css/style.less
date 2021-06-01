@@ -247,7 +247,7 @@
         width: 100%;
         height: 100px;
         top: 0;
-        background-color: #f8f8f8;
+        background-color: #F8F8F8;
     }
     .searchForm{
         width: 740px;
@@ -284,6 +284,54 @@
     }
     .searchResult{
         text-align: center;
+        h3{
+            margin-bottom: 90px;
+        }
+        .cards{
+            text-align: left;
+            font-size: 16px;
+
+            .card-head{
+                height: 80px;
+                line-height: 80px;
+                display: flex;
+                justify-content: space-between;
+                .names{
+                    display: inline-flex;
+                    align-items: center;
+                    font-size: 24px;
+                    img{
+                        margin-right: 10px;
+                    }
+                    span{
+                        margin-left: 10px;
+                        font-size: 20px;
+                    }
+                }
+            }
+            .card-content{
+                padding: 30px;
+                border:1px solid @bordercolor;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                    li{
+                        width: 25%;
+
+                        .key{
+                            font-weight: bold;
+                            margin-bottom: 5px;
+                        }
+                        .vol{
+                            line-height: 24px;
+                        }
+                    }
+                }
+            }
+
+        }
     }
 }
 @media screen and (max-width:1170px) {

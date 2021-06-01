@@ -2,7 +2,7 @@
   <div class="blockPage">
     <Headmobile />
     <Headsearch crumbs="block" v-on:handleNodata="isNaNdata" />
-    <Mynavs page_index="3" />
+    <mynavs page_index="3" />
     <Nodata v-if="nodata" v-on:reload="isNaNdata" />
     <div class="main" v-else>
       <Spin size="large" fix v-if="loading"></Spin>
@@ -35,8 +35,8 @@
                   <div class="vals">{{ data.fee }}</div>
                 </li>
                 <li>
-                  <div class="types">{{ $t("block.TransactionsCount") }}</div>
-                  <div class="vals">{{ data.amount }}</div>
+                  <div class="types">{{ $t("block.mount") }}</div>
+                  <div class="vals">{{ data.tx_cnt }}</div>
                 </li>
                 <li>
                   <div class="types">{{ $t("block.GasUsed") }}</div>
@@ -44,11 +44,11 @@
                 </li>
                 <li>
                   <div class="types">{{ $t("block.MiningDifficulty") }}</div>
-                  <div class="vals">{{ data.difficulty }}</div>
+                  <div class="vals">{{ data.difficulty|numInit}}</div>
                 </li>
                 <li>
                   <div class="types">{{ $t("block.TotalDifficulty") }}</div>
-                  <div class="vals">{{ data.difficulty_total }}</div>
+                  <div class="vals">{{ data.difficulty_total|numInit}}</div>
                 </li>
                 <li>
                   <div class="types">{{ $t("block.BlockReward") }}</div>
@@ -62,7 +62,7 @@
                 </li>
                 <li>
                   <div class="types">{{ $t("block.Confirmations") }}</div>
-                  <div class="vals">{{ data.tx_cnt }}</div>
+                  <div class="vals">0</div>
                 </li>
                 <li>
                   <div class="types">{{ $t("block.PreviousBlock") }}</div>
@@ -71,8 +71,6 @@
                       :to="
                         '/' +
                         this.$route.params.lang +
-                        '/' +
-                        this.$route.params.explorer +
                         '/block/' +
                         Number(data.id - 1)
                       "
@@ -87,8 +85,6 @@
                       :to="
                         '/' +
                         this.$route.params.lang +
-                        '/' +
-                        this.$route.params.explorer +
                         '/block/' +
                         Number(data.id + 1)
                       "
@@ -111,8 +107,6 @@
                       :to="
                         '/' +
                         this.$route.params.lang +
-                        '/' +
-                        this.$route.params.explorer +
                         '/address/' +
                         data.miner
                       "
@@ -179,7 +173,10 @@ export default {
       total_03: 0,
     };
   },
-  created() {},
+  created() {
+    this.getDetail(this.$route.params.id);
+
+  },
   components: {
     findTransaction,
     findToken,
@@ -187,7 +184,7 @@ export default {
   },
   methods: {
     getDetail(id) {
-      this.$axios.get("/" + this.$route.params.explorer + "/block/find?id=" + id)
+      this.$axios.get("/" + this.$store.state.explorer + "/block/find?id=" + id)
         .then(({data})  => {
           if (data.code != "-1") {
             this.data = data.data;
@@ -197,11 +194,7 @@ export default {
             let _this = this;
             setTimeout(function () {
               _this.$router.push(
-                "/" +
-                  _this.$route.params.lang +
-                  "/" +
-                  _this.$route.params.explorer +
-                  "/block/"
+                "/" + _this.$route.params.lang +"/block/"
               );
             }, 2000);
           }
@@ -223,7 +216,7 @@ export default {
     },
   },
   mounted() {
-    this.getDetail(this.$route.params.id);
+    // this.getDetail(this.$route.params.id);
   },
 };
 </script>

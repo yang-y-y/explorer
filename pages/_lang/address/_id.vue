@@ -2,7 +2,7 @@
     <div class="addressPage">
         <Headmobile />
         <Headsearch crumbs="address" v-on:handleNodata="isNaNdata"/>
-        <Mynavs page_index='6'/>
+        <mynavs page_index='6'/>
         <Nodata v-if="nodata" v-on:reload="isNaNdata"/>
         <div class="main" v-else>
             <div class="title-con">
@@ -27,7 +27,7 @@
                             </li>
                             <li>
                                 <div class="types">{{$t('address.tokenBalance')}}</div>
-                                <div class="vals"><nuxt-link :to="'/'+$route.params.lang+'/'+$route.params.explorer+'/tokentxns/'+$route.params.id">{{$t('address.lookToken')}}</nuxt-link></div>
+                                <div class="vals"><nuxt-link :to="'/'+$route.params.lang+'/tokentxns/'+$route.params.id">{{$t('address.lookToken')}}</nuxt-link></div>
                             </li>
                             <li>
                                 <div class="types">{{$t('address.TotalTransactions')}}</div>
@@ -127,7 +127,7 @@ export default {
     methods: {
         StringCopy, //导入的copy方法
         addressTypeof(id){
-            this.$axios.get('/'+this.$route.params.explorer+"/address/isSmartContractAddress?address="+id).then(({data})  => {
+            this.$axios.get('/'+this.$store.state.explorer+"/address/isSmartContractAddress?address="+id).then(({data})  => {
                 if(data.code != '-1'&&data.data!=null){
                     this.addressType = data.data.valid
                 }else{
@@ -136,7 +136,7 @@ export default {
            })
         },
         getDetail(id){
-             this.$axios.get('/'+this.$route.params.explorer+"/eth-account/find?pageSize=20&address="+id).then(({data})  => {
+             this.$axios.get('/'+this.$store.state.explorer+"/eth-account/find?pageSize=20&address="+id).then(({data})  => {
                  
                 if(data.code != '-1'&&data.data!=null){
                     this.data = data.data;

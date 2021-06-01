@@ -38,18 +38,19 @@ export default ({ app, store, i18n }) => {
     }),
     Vue.filter("DifficultyInit", (num) =>{
         let initnum = '';
-        if(num>=1024&&num<1024**2){
+        let matha = 1024;
+        if(num>=matha&&num<Math.pow(matha,2)){
             return initnum = (num / 1024)+'K';
-        }else if(num>=1024**2&&num<(1024**3)-1){
-            return initnum = num / (1024**2)+'M';
-        }else if(num>=1024**3&&num<(1024**4)-1){
-            return initnum = num / (1024**3) +'G';
-        }else if(num>=1024**4&&num<(1024**5)-1){
+        }else if(num>=Math.pow(matha,2)&&num<Math.pow(matha,3)-1){
+            return initnum = num / Math.pow(matha,2)+'M';
+        }else if(num>=Math.pow(matha,3)&&num<Math.pow(matha,4)-1){
+            return initnum = num / Math.pow(matha,3) +'G';
+        }else if(num>=Math.pow(matha,4)&&num<Math.pow(matha,5)-1){
             return initnum = (num / (1024**4)).toFixed(2)+'T';
-        }else if(num>=1024**5&&num<(1024**6)-1){
-            return initnum = (num / (1024**5)).toFixed(2)+'P';
-        }else if(num>=1024**6&&num<(1024**7)-1){
-            return initnum = (num / (1024**6)).toFixed(2)+'E';
+        }else if(num>=Math.pow(matha,5)&&num<Math.pow(matha,6)-1){
+            return initnum = (num / Math.pow(matha,5)).toFixed(2)+'P';
+        }else if(num>=Math.pow(matha,6)&&num<Math.pow(matha,7)-1){
+            return initnum = (num / Math.pow(matha,6)).toFixed(2)+'E';
         }else{
             return initnum = num + 'K'
         }
@@ -73,7 +74,28 @@ export default ({ app, store, i18n }) => {
         return num.toFixed(2)
     })
 
-
+    Vue.filter("numInit", function (number, decimals = 0, decPoint = '.', thousandsSep = ',') {
+        number = (number + '').replace(/[^0-9+-Ee.]/g, '')
+        let n = !isFinite(+number) ? 0 : +number
+        let prec = !isFinite(+decimals) ? 0 : Math.abs(decimals)
+        let sep = (typeof thousandsSep === 'undefined') ? ',' : thousandsSep
+        let dec = (typeof decPoint === 'undefined') ? '.' : decPoint
+        let s = ''
+        let toFixedFix = function (n, prec) {
+          let k = Math.pow(10, prec)
+          return '' + Math.ceil(n * k) / k
+        }
+        s = (prec ? toFixedFix(n, prec) : '' + Math.round(n)).split('.')
+        let re = /(-?\d+)(\d{3})/
+        while (re.test(s[0])) {
+          s[0] = s[0].replace(re, '$1' + sep + '$2')
+        }
+        if ((s[1] || '').length < prec) {
+          s[1] = s[1] || ''
+          s[1] += new Array(prec - s[1].length + 1).join('0')
+        }
+        return s.join(dec)
+      })
 
 
     // 1K=1024  1M=1024k  1G=1024M 1T=1024G 1P=1024T 1E=1024P

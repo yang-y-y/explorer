@@ -34,6 +34,7 @@ export default {
     {src: '@/plugins/axios', ssr: true},
     {src: '@/plugins/view-ui', ssr: true},
     {src: '@/plugins/filter', ssr: true},
+    {src: '@/plugins/api', ssr: true},
   ],
   // mode: 'universal',
   // Auto import components: https://go.nuxtjs.dev/config-components

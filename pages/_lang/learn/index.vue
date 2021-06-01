@@ -2,7 +2,7 @@
   <div class="list">
     <Headmobile />
     <Headsearch crumbs="token" v-on:handleNodata="isNaNdata" />
-    <Mynavs page_index="0" />
+    <mynavs page_index="0" />
     <Nodata v-if="nodata" v-on:reload="isNaNdata"/>
     <div class="main" v-else>
       <div class="title-con">

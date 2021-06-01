@@ -2,7 +2,7 @@
   <div class="list">
     <Headmobile />
     <Headsearch crumbs="address" v-on:handleNodata="isNaNdata"/>
-    <Mynavs page_index="6" />
+    <mynavs page_index="6" />
     <Nodata v-if="nodata" v-on:reload="isNaNdata"/>
     <div class="main" v-else>
         <div class="title-con">
@@ -69,8 +69,6 @@ export default {
                   to:
                     "/" +
                     this.$store.state.locale +
-                    "/" +
-                    this.$route.params.explorer +
                     "/block/" +
                     params.row.block_id,
                 },
@@ -99,8 +97,6 @@ export default {
                       to:
                         "/" +
                         this.$store.state.locale +
-                        "/" +
-                        this.$route.params.explorer +
                         "/address/" +
                         params.row.address
                     },
@@ -140,7 +136,7 @@ export default {
   created() {},
   methods: {
     getDetail(page) {
-      this.$axios.get("/" + this.$route.params.explorer + "/eth-account/newestList?pageNum="+page)
+      this.$axios.get("/" + this.$store.state.explorer + "/eth-account/newestList?pageNum="+page)
         .then(({data})  => {
           if (data.code != "-1") {
             this.data = data.data.list;

@@ -72,7 +72,7 @@ export default {
                   "nuxt-link",
                   {
                     attrs: {
-                      to: '/'+this.$store.state.locale+'/'+this.$route.params.explorer+"/address/"+params.row.from,
+                      to: '/'+this.$store.state.locale+"/address/"+params.row.from,
                     },
                   },
                   params.row.from
@@ -98,7 +98,7 @@ export default {
                   "nuxt-link",
                   {
                     attrs: {
-                      to: '/'+this.$store.state.locale+'/'+this.$route.params.explorer+"/address/"+params.row.to,
+                      to: '/'+this.$store.state.locale+'/'+this.$store.state.explorer+"/address/"+params.row.to,
                     },
                   },
                   params.row.to
@@ -150,7 +150,7 @@ export default {
       // console.log(page)
     },
     getToken(type,id, page) {
-        this.$axios.get("/" + this.$route.params.explorer + "/transaction/list?"+type+"="+id+"&pageNum="+page).then(({data})  => {
+        this.$axios.get("/" + this.$store.state.explorer + "/transaction/list?"+type+"="+id+"&pageNum="+page).then(({data})  => {
           if (data.code == 0&&data.data.list) {
             this.data = data.data.list;
             this.total = data.data.total;

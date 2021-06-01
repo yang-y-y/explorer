@@ -2,7 +2,7 @@
   <div class="blocklist">
     <Headmobile />
     <Headsearch crumbs="block" v-on:handleNodata="isNaNdata" />
-    <Mynavs page_index="3" />
+    <mynavs page_index="3" />
     <Nodata v-if="nodata" v-on:reload="isNaNdata"/>
     <div class="main" v-else>
       <div class="title-con">
@@ -79,8 +79,6 @@ export default {
                   to:
                     "/" +
                     this.$store.state.locale +
-                    "/" +
-                    this.$route.params.explorer +
                     "/block/" +
                     params.row.id,
                 },
@@ -108,8 +106,6 @@ export default {
                     attrs: {
                       to:"/" +
                         this.$store.state.locale +
-                        "/" +
-                        this.$route.params.explorer +
                         "/address/" +
                         params.row.miner,
                     },
@@ -144,17 +140,17 @@ export default {
           width: 170,
         },
         {
-          title: this.$t('blockList.reward')+'('+this.$route.params.explorer+')',
+          title: this.$t('blockList.reward')+'('+this.$store.state.explorer+')',
           key: "reward",
           width: 170,
         },
         {
           title:this.$t('blockList.transNum'),
-          key: "gas_limit",
+          key: "tx_cnt",
           width: 130,
         },
         {
-          title:this.$t('blockList.amount')+'('+this.$route.params.explorer+')',
+          title:this.$t('blockList.amount')+'('+this.$store.state.explorer+')',
           key: "amount",
           width: 156,
         },

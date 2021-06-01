@@ -2,7 +2,7 @@
   <div class="chartslist">
     <Headmobile />
     <Headsearch crumbs="charts" v-on:handleNodata="isNaNdata" />
-    <Mynavs page_index="2" />
+    <mynavs page_index="2" />
     <Nodata v-if="nodata" v-on:reload="isNaNdata"/>
     <div class="main" v-else>
       <div class="title-con">
@@ -221,7 +221,7 @@ export default {
   methods: {
     getDetail(page,total) {
       this.$axios.get(
-          "/" + this.$route.params.explorer + "/daily-block/list?pageSize="+total+'&pageNum='+page
+          "/" + this.$store.state.explorer + "/daily-block/list?pageSize="+total+'&pageNum='+page
         )
         .then(({data})  => {
           if (data.code != "-1"&&data.data.list) {

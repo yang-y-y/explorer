@@ -2,7 +2,7 @@
     <div class="blockPage">
         <Headmobile />
         <Headsearch crumbs="tokentxns" v-on:handleNodata="isNaNdata"/>
-        <Mynavs page_index='7'/>
+        <mynavs page_index='7'/>
         <Nodata v-if="nodata" v-on:reload="isNaNdata"/>
         <div class="main" v-else>
             <div class="title-con">
@@ -76,7 +76,7 @@ export default {
     },
     methods: {
         getDetail(id,page){
-             this.$axios.get('/'+this.$route.params.explorer+"/daily-account-eth/list?pageNum="+page+"&pageSize="+this.pagesize+"&address="+id).then(({data})  => {
+             this.$axios.get('/'+this.$store.state.explorer+"/daily-account-eth/list?pageNum="+page+"&pageSize="+this.pagesize+"&address="+id).then(({data})  => {
                 if(data.code != '-1'&&data.data.list != null){
 
                     this.data = data.data.list;

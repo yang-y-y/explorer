@@ -38,10 +38,13 @@ export default ({ isHMR,params, app,route, store, error,redirect }) => {
     
 
     //判断地址栏是否有该浏览器ID
-    if(explorer&&store.state.explorerList.indexOf(explorer) === -1){
-      return redirect('/' + defaultLocale + '/')
-    }
+    // if(explorer&&store.state.explorerList.indexOf(explorer) === -1){
+    //   return redirect('/' + defaultLocale + '/')
+    // }
     
+
+    
+
     // //判断地址栏是否有该charts路由
     // if(route.name == 'lang-explorer-charts-id'&&pageid&&store.state.chartsType.indexOf(pageid) === -1){
     //   return redirect('/' + defaultLocale + '/' + store.state.explorer+'/charts/')

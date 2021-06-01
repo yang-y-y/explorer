@@ -3,7 +3,7 @@
   .theme()
 }
 .theme_black{
-  .theme(@bgcolor:#040d23,@bordercolor:#2a3040,@fontcolor:#cfcfcf,@active-color:#fff,@fontcolor2:#000,@bghover:#262e42,@link-hover:#fff,@rgbaBg:rgba(11,21,45,47%),@boxshadow: rgba(147, 204, 210, 0.3),@link-blue:#4878FF,@active-color2:#fff,@boxshadow2: rgba(26, 79, 226, 0.685),@mbHdbg:#030d25,@borderColorActive:#4878fe,@boxshadow3:0px 0px 10px 0px rgba(72,120,254,70%))
+  .theme(@bgcolor:#040d23,@bordercolor:#2a3040,@fontcolor:#cfcfcf,@active-color:#fff,@fontcolor2:#000,@bghover:#262e42,@link-hover:#fff,@rgbaBg:rgba(11,21,45,47%),@boxshadow: rgba(147, 204, 210, 0.3),@link-blue:#4878FF,@active-color2:#fff,@boxshadow2: rgba(26, 79, 226, 0.685),@mbHdbg:#030d25,@borderColorActive:#4878fe,@boxshadow3:0px 0px 10px 0px rgba(72,120,254,70%),@bgcolor2:#2a3040)
 }
 html {
   font-family:
@@ -46,7 +46,22 @@ a {
   box-sizing: border-box;
   margin: 0;
 }
-
+::-webkit-scrollbar{
+  width: 4px;
+  height: 4px;
+  border-radius: 3px;
+  // background-color: rgb(255, 255, 255);
+}
+::-webkit-scrollbar-corner {
+  // background-color: rgb(255, 255, 255);
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 6px;
+  background-color: rgb(165, 177, 197);
+}
+::-webkit-scrollbar-track{
+  // background-color: rgb(255, 255, 255);
+}
 input {
   border: none;
   outline: none;
@@ -557,6 +572,7 @@ li {
   a {
     display: inline-block;
     color: @link-blue;
+    font-size: 14px;
   }
 }
 

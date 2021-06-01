@@ -16,11 +16,7 @@
 <script>
 export default {
     props: ["page_index"],
-    data(){
-      return{
-        // page_index:this.page_index
-      }
-    }
+    name:'navs'
     
 }
 </script>

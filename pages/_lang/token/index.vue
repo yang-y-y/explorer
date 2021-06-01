@@ -2,7 +2,7 @@
   <div class="list">
     <Headmobile />
     <Headsearch crumbs="token" v-on:handleNodata="isNaNdata" />
-    <Mynavs page_index="7" />
+    <mynavs page_index="7" />
     <Nodata v-if="nodata" v-on:reload="isNaNdata"/>
     <div class="main" v-else>
       <div class="title-con">
@@ -69,7 +69,7 @@ export default {
                     "/" +
                     this.$store.state.locale +
                     "/" +
-                    this.$route.params.explorer +
+                    this.$store.state.explorer +
                     "/token/" +
                     params.row.token,
                 },
@@ -106,7 +106,7 @@ export default {
   },
   methods: {
     getDetail(page) {
-      this.$axios.get("/" + this.$route.params.explorer + "/token/list?pageNum="+page)
+      this.$axios.get("/" + this.$store.state.explorer + "/token/list?pageNum="+page)
         .then(({data})  => {
           if (data.code != "-1"||data.data!=null) {
             this.data = data.data.list;

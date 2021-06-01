@@ -7,12 +7,6 @@
 </template>
 <script>
 export default {
-    props:['datalist','columns','loading'],
-    data(){
-        return{
-            
-        }
-    }
-
+    props:['datalist','columns','loading']
 }
 </script>

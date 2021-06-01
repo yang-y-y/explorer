@@ -35,13 +35,13 @@ export default {
                 this.$nuxt.$loading.start()
                 setTimeout(() => this.$nuxt.$loading.finish(), 500)
             })
-            if(type==this.$route.params.explorer){
+            if(type==this.$store.state.explorer){
                 if(id.length==66){
-                    this.$router.push('/'+this.$store.state.locale+'/'+this.$route.params.explorer+'/transaction/'+id)
+                    this.$router.push('/'+this.$store.state.locale+'/transaction/'+id)
                 }else if(id.length==42){
-                   this.$router.push('/'+this.$store.state.locale+'/'+this.$route.params.explorer+'/address/'+id)
+                   this.$router.push('/'+this.$store.state.locale+'/address/'+id)
                 }else if(isNaN(isnumb) == false&&id){
-                   this.$router.push('/'+this.$store.state.locale+'/'+this.$route.params.explorer+'/block/'+id)
+                   this.$router.push('/'+this.$store.state.locale+'/block/'+id)
                 }
                 else{
                     this.$emit('handleNodata', 'true')

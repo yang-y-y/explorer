@@ -223,7 +223,7 @@
   width: 100%;
   height: 100px;
   top: 0;
-  background-color: #f8f8f8;
+  background-color: #F8F8F8;
 }
 .searchPage .searchForm {
   width: 740px;
@@ -260,6 +260,51 @@
 }
 .searchPage .searchResult {
   text-align: center;
+}
+.searchPage .searchResult h3 {
+  margin-bottom: 90px;
+}
+.searchPage .searchResult .cards {
+  text-align: left;
+  font-size: 16px;
+}
+.searchPage .searchResult .cards .card-head {
+  height: 80px;
+  line-height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.searchPage .searchResult .cards .card-head .names {
+  display: inline-flex;
+  align-items: center;
+  font-size: 24px;
+}
+.searchPage .searchResult .cards .card-head .names img {
+  margin-right: 10px;
+}
+.searchPage .searchResult .cards .card-head .names span {
+  margin-left: 10px;
+  font-size: 20px;
+}
+.searchPage .searchResult .cards .card-content {
+  padding: 30px;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.searchPage .searchResult .cards .card-content ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.searchPage .searchResult .cards .card-content ul li {
+  width: 25%;
+}
+.searchPage .searchResult .cards .card-content ul li .key {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.searchPage .searchResult .cards .card-content ul li .vol {
+  line-height: 24px;
 }
 @media screen and (max-width: 1170px) {
   .home {

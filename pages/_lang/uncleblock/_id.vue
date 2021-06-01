@@ -2,7 +2,7 @@
     <div class="blockPage">
         <Headmobile />
         <Headsearch crumbs="uncleblock" v-on:handleNodata="isNaNdata"/>
-        <Mynavs page_index='3'/>
+        <mynavs page_index='3'/>
         <Nodata v-if="nodata" v-on:reload="isNaNdata"/>
         <div class="main" v-else>
             <div class="title-con">
@@ -124,7 +124,7 @@ export default {
     },
     methods: {
         getDetail(id){
-             this.$axios.get('/'+this.$route.params.explorer+"/uncleblock/findBlock?block="+id).then(({data})  => {
+             this.$axios.get('/'+this.$store.state.explorer+"/uncleblock/findBlock?block="+id).then(({data})  => {
                  if(data.code!=0){
                     this.data = data.data[0];
                  }

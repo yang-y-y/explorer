@@ -39,7 +39,7 @@ export default {
                   "nuxt-link",
                   {
                     attrs: {
-                      to:'/'+this.$store.state.locale+'/'+this.$route.params.explorer+"/block/"+params.row.id
+                      to:'/'+this.$store.state.locale+"/block/"+params.row.id
                     },
                   },
                   params.row.hash
@@ -89,7 +89,7 @@ export default {
                   "nuxt-link",
                   {
                     attrs: {
-                     to:'/'+this.$store.state.locale+'/'+this.$route.params.explorer+"/address/"+params.row.from
+                     to:'/'+this.$store.state.locale+"/address/"+params.row.from
                     },
                   },
                   params.row.from
@@ -117,7 +117,7 @@ export default {
                   "nuxt-link",
                   {
                     attrs: {
-                     to:'/'+this.$store.state.locale+'/'+this.$route.params.explorer+"/address/"+params.row.to
+                     to:'/'+this.$store.state.locale+"/address/"+params.row.to
                     },
                   },
                   params.row.to
@@ -161,7 +161,7 @@ export default {
     getTransaction(type,id, page) {
       this.$axios.get(
           "/" +
-            this.$route.params.explorer +
+            this.$store.state.explorer +
             "/transaction/list?"+type+"=" +
             id +
             "&pageNum=" +

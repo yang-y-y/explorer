@@ -9,10 +9,10 @@
         v-on:mouseout="removeActive()"
       >
         <div v-if="index == 3">
-            <div class="title"><nuxt-link :to="item.path">{{$t('headerTab.'+item.name)}}</nuxt-link></div>
+            <div class="title"><nuxt-link :to="item.path"  :title="$t('altTitle.'+item.name+'.title')">{{$t('headerTab.'+item.name)}}</nuxt-link></div>
             <div class="smlist">
-                <nuxt-link :to="item.path">{{ $t('headerMore.blocklist')}}</nuxt-link>
-                <nuxt-link :to="'/'+$route.params.lang+'/'+$route.params.explorer+'/uncleblock/'">{{$t('headerMore.uncleblocklist')}}</nuxt-link>
+                <nuxt-link :to="item.path"  :title="$t('altTitle.'+item.name+'.title')">{{ $t('headerMore.blocklist')}}</nuxt-link>
+                <nuxt-link :to="'/'+$store.state.locale+'/uncleblock/'">{{$t('headerMore.uncleblocklist')}}</nuxt-link>
             </div>
         </div>
         <div class="title"  v-else>
@@ -31,35 +31,35 @@ export default {
       menuData: [
         {
             name:"home",
-            path:'/'+this.$route.params.lang+'/'+this.$route.params.explorer+'/',
+            path:'/'+this.$store.state.locale+'/',
         },
         {
             name:"largetxs",
-            path:'/'+this.$route.params.lang+'/'+this.$route.params.explorer+'/large/'
+            path:'/'+this.$store.state.locale+'/large/'
         },
         {
             name:"charts",
-            path:'/'+this.$route.params.lang+'/'+this.$route.params.explorer+'/charts/'
+            path:'/'+this.$store.state.locale+'/charts/'
         },
         {
             name:"blockList",
-            path:'/'+this.$route.params.lang+'/'+this.$route.params.explorer+'/block/'
+            path:'/'+this.$store.state.locale+'/block/'
         },
         {
             name:"newTxs",
-            path:'/'+this.$route.params.lang+'/'+this.$route.params.explorer+'/transaction/'
+            path:'/'+this.$store.state.locale+'/transaction/'
         },
         {
             name:"pending",
-            path:'/'+this.$route.params.lang+'/'+this.$route.params.explorer+'/transaction/'
+            path:'/'+this.$store.state.locale+'/transaction/'
         },
         {
             name:"newAddress",
-            path:'/'+this.$route.params.lang+'/'+this.$route.params.explorer+'/address/'
+            path:'/'+this.$store.state.locale+'/address/'
         },
         {
             name:"token",
-            path:'/'+this.$route.params.lang+'/'+this.$route.params.explorer+'/token/'
+            path:'/'+this.$store.state.locale+'/token/'
         },
       ],
       current:this.page_index
