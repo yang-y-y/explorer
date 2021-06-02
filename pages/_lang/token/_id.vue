@@ -71,7 +71,7 @@ export default {
     },
     methods: {
         getDetail(id){
-             this.$axios.get('/'+this.$store.state.explorer+"/token-account/findByAddress?address="+id).then(({data})  => {
+             this.$axios.get(this.$ApiUrl.Api.tokenFind+"?token="+id).then(({data})  => {
                 if(data.code != '-1'||data.data != null){
                     this.data = data.data;
                 }else{

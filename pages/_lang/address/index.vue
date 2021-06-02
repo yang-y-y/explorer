@@ -136,7 +136,7 @@ export default {
   created() {},
   methods: {
     getDetail(page) {
-      this.$axios.get("/" + this.$store.state.explorer + "/eth-account/newestList?pageNum="+page)
+      this.$axios.get(this.$ApiUrl.Api.acountNewList+"?pageNum="+page)
         .then(({data})  => {
           if (data.code != "-1") {
             this.data = data.data.list;

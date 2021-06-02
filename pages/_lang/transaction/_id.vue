@@ -112,7 +112,7 @@ export default {
     },
     methods: {
         getDetail(id){
-             this.$axios.get('/'+this.$store.state.explorer+"/transaction/find?hash="+id).then(({data})  => {
+             this.$axios.get(this.$ApiUrl.Api.transactionFind+"?hash="+id).then(({data})  => {
                 if(data.code != '-1'){
                     this.data = data.data;
                 }else{

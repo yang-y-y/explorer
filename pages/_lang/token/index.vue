@@ -106,7 +106,7 @@ export default {
   },
   methods: {
     getDetail(page) {
-      this.$axios.get("/" + this.$store.state.explorer + "/token/list?pageNum="+page)
+      this.$axios.get(this.$ApiUrl.Api.tokenList + "?pageNum="+page)
         .then(({data})  => {
           if (data.code != "-1"||data.data!=null) {
             this.data = data.data.list;

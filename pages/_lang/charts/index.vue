@@ -220,9 +220,7 @@ export default {
   },
   methods: {
     getDetail(page,total) {
-      this.$axios.get(
-          "/" + this.$store.state.explorer + "/daily-block/list?pageSize="+total+'&pageNum='+page
-        )
+      this.$axios.get( this.$ApiUrl.Api.dailyBlockList + "?pageSize="+total+'&pageNum='+page)
         .then(({data})  => {
           if (data.code != "-1"&&data.data.list) {
             let blockdata = [];

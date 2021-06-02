@@ -140,7 +140,7 @@ export default {
     methods: {
         getDetail(page){
 
-             this.$axios.get('/eth/transaction/newestList?pageNum='+page).then(({data})  => {
+             this.$axios.get(this.$ApiUrl.Api.transactionNewList+'?pageNum='+page).then(({data})  => {
                 this.datalist = data.data.list;
                 this.total = data.data.total;
                 this.loading = false;

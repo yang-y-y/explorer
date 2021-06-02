@@ -127,7 +127,7 @@ export default {
     methods: {
         StringCopy, //导入的copy方法
         addressTypeof(id){
-            this.$axios.get('/'+this.$store.state.explorer+"/address/isSmartContractAddress?address="+id).then(({data})  => {
+            this.$axios.get(this.$ApiUrl.Api.isSmartContractAddress+"?address="+id).then(({data})  => {
                 if(data.code != '-1'&&data.data!=null){
                     this.addressType = data.data.valid
                 }else{
@@ -136,7 +136,7 @@ export default {
            })
         },
         getDetail(id){
-             this.$axios.get('/'+this.$store.state.explorer+"/eth-account/find?pageSize=20&address="+id).then(({data})  => {
+             this.$axios.get(this.$ApiUrl.Api.acountFind+"?pageSize=20&address="+id).then(({data})  => {
                  
                 if(data.code != '-1'&&data.data!=null){
                     this.data = data.data;

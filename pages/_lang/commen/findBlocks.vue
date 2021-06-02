@@ -108,10 +108,7 @@ export default {
       // console.log(page)
     },
     getTransaction(type,id, page) {
-      this.$axios.get(
-          "/" +
-            this.$store.state.explorer +
-            "/transaction/list?"+type+"=" +
+      this.$axios.get(this.$ApiUrl.Api.transactionList+"?"+type+"=" +
             id +
             "&pageNum=" +
             page

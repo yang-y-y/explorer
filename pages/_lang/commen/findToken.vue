@@ -150,7 +150,7 @@ export default {
       // console.log(page)
     },
     getToken(type,id, page) {
-        this.$axios.get("/" + this.$store.state.explorer + "/transaction/list?"+type+"="+id+"&pageNum="+page).then(({data})  => {
+        this.$axios.get(this.$ApiUrl.Api.transactionList + "?"+type+"="+id+"&pageNum="+page).then(({data})  => {
           if (data.code == 0&&data.data.list) {
             this.data = data.data.list;
             this.total = data.data.total;

@@ -53,7 +53,7 @@
             :datalist="datalist"
           />
           <div class="morelink">
-            <nuxt-link :to="'/'+$route.params.lang+'/'+$route.params.explorer+'/block/'" class="blue">{{$t('more')}}></nuxt-link>
+            <nuxt-link :to="'/'+$store.state.locale+'/block/'" class="blue">{{$t('more')}}></nuxt-link>
           </div>
         </div>
       </div>
@@ -74,7 +74,7 @@
             :datalist="datalist2"
           />
           <div class="morelink">
-            <nuxt-link :to="'/'+$route.params.lang+'/'+$route.params.explorer+'/transaction/'" class="blue">{{$t('more')}}></nuxt-link>
+            <nuxt-link :to="'/'+$store.state.locale+'/transaction/'" class="blue">{{$t('more')}}></nuxt-link>
           </div>
         </div>
       </div>
@@ -125,7 +125,7 @@
             </p>
           </div>
           <div class="morelink">
-            <a href="" class="blue">{{$t('more')}}></a>
+            <nuxt-link :to="'/'+$store.state.locale+'/learn/'" class="blue">{{$t('more')}}></nuxt-link>
           </div>
         </div>
       </div>
@@ -323,7 +323,10 @@ export default {
                   "nuxt-link",
                   {
                     attrs: {
-                      to: "/",
+                      to:"/" +
+                        this.$store.state.locale +
+                        "/address/" +
+                        params.row.from,
                     },
                   },
                   params.row.from
@@ -346,10 +349,13 @@ export default {
               },
               [
                 h(
-                  "a",
+                  "nuxt-link",
                   {
                     attrs: {
-                      href: "/",
+                       to:"/" +
+                        this.$store.state.locale +
+                        "/address/" +
+                        params.row.to,
                     },
                   },
                   params.row.to
@@ -383,19 +389,19 @@ export default {
     },
     
     getData() {
-      this.$axios.get("eth/main/info").then(({data})  => {
+      this.$axios.get(this.$ApiUrl.Api.explorerInfo).then(({data})  => {
         if(data.data){
            this.dataInfo = data.data
         }
       });
-      this.$axios.get("eth/block/newestList").then(({data})  => {
+      this.$axios.get(this.$ApiUrl.Api.blockNewList).then(({data})  => {
         if(data.data){
            this.datalist = data.data.list;
         }
        
         this.loading = false;
       });
-      this.$axios.get("eth/transaction/newestList").then(({data})  => {
+      this.$axios.get(this.$ApiUrl.Api.transactionNewList).then(({data})  => {
         if(data.data){
         this.datalist2 = data.data.list;
 

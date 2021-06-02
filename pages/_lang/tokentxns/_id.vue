@@ -76,7 +76,7 @@ export default {
     },
     methods: {
         getDetail(id,page){
-             this.$axios.get('/'+this.$store.state.explorer+"/daily-account-eth/list?pageNum="+page+"&pageSize="+this.pagesize+"&address="+id).then(({data})  => {
+             this.$axios.get(this.$ApiUrl.Api.dailyAcountList+"?pageNum="+page+"&pageSize="+this.pagesize+"&address="+id).then(({data})  => {
                 if(data.code != '-1'&&data.data.list != null){
 
                     this.data = data.data.list;

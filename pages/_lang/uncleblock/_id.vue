@@ -124,7 +124,7 @@ export default {
     },
     methods: {
         getDetail(id){
-             this.$axios.get('/'+this.$store.state.explorer+"/uncleblock/findBlock?block="+id).then(({data})  => {
+             this.$axios.get(this.$ApiUrl.Api.uncleFind+"?block="+id).then(({data})  => {
                  if(data.code!=0){
                     this.data = data.data[0];
                  }

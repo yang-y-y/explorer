@@ -8,7 +8,7 @@
       <div class="title-con">
         <div class="container">
           <div class="title-global">
-            <h2>wiki</h2>
+            <h2>Learn</h2>
           </div>
         </div>
       </div>

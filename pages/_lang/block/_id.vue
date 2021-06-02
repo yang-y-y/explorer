@@ -184,7 +184,7 @@ export default {
   },
   methods: {
     getDetail(id) {
-      this.$axios.get("/" + this.$store.state.explorer + "/block/find?id=" + id)
+      this.$axios.get(this.$ApiUrl.Api.blockFind + "?id=" + id)
         .then(({data})  => {
           if (data.code != "-1") {
             this.data = data.data;

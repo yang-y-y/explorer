@@ -88,9 +88,9 @@ export default {
       })
  
     ],
-    analyze:true, // 检测js包大小
-    assetFilter: function(assetFilename) {	    		
-      return assetFilename.endsWith('.js');	    	
-    }
+    // analyze:true, // 检测js包大小
+    // assetFilter: function(assetFilename) {	    		
+    //   return assetFilename.endsWith('.js');	    	
+    // }
   }
 }

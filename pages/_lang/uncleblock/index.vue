@@ -124,7 +124,7 @@ export default {
     methods: {
         getDetail(page){
 
-             this.$axios.get('/eth/uncleblock/newestList?pageNum='+page).then(({data})  => {
+             this.$axios.get(this.$ApiUrl.Api.uncleNewList+'?pageNum='+page).then(({data})  => {
                 this.datalist = data.data.list;
                 this.total = data.data.total;
                 this.loading = false;

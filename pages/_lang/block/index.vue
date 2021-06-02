@@ -201,7 +201,7 @@ export default {
   },
   methods: {
     getDetail(page) {
-      this.$axios.get("/eth/block/newestList?pageNum=" + page).then(({data})  => {
+      this.$axios.get(this.$ApiUrl.Api.blockList+"?pageNum=" + page).then(({data})  => {
         if (data.code != "-1") {
           this.datalist = data.data.list;
           this.total = data.data.total;
