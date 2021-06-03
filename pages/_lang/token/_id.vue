@@ -2,7 +2,7 @@
     <div class="blockPage">
         <Headmobile />
         <Headsearch crumbs="token" v-on:handleNodata="isNaNdata"/>
-        <mynavs page_index='6'/>
+        <mynavs page_index='7'/>
         <Nodata v-if="nodata" v-on:reload="isNaNdata"/>
         <div class="main" v-else>
             <div class="title-con">

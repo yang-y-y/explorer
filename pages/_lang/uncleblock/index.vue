@@ -56,7 +56,7 @@ export default {
             render: (h, params) => {
                 return h('nuxt-link',{
                     attrs:{
-                    to:'/'+this.$store.state.locale+"/block/"+params.row.block_id
+                    to:this.$route.params.lang?'/'+this.$route.params.lang+"/block/"+params.row.block_id:"/block/"+params.row.block_id
                     }
                 }, params.row.block_id)
             }
@@ -68,7 +68,7 @@ export default {
             render: (h, params) => {
                 return h('nuxt-link',{
                     attrs:{
-                    to:'/'+this.$store.state.locale+"/uncleblock/"+params.row.uncle_block_id
+                    to:this.$route.params.lang?'/'+this.$route.params.lang+"/uncleblock/"+params.row.uncle_block_id:"/uncleblock/"+params.row.uncle_block_id
                     }
                 }, params.row.uncle_block_id)
             }
@@ -85,7 +85,7 @@ export default {
                 }, [
                     h('nuxt-link',{
                         attrs:{
-                        to:'/'+this.$store.state.locale+"/address/"+params.row.miner
+                        to:this.$route.params.lang?'/'+this.$route.params.lang+"/address/"+params.row.miner:"/address/"+params.row.miner
                         }
                     }, params.row.miner)
                 ]);

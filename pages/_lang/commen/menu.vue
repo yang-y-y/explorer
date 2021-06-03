@@ -12,7 +12,7 @@
             <div class="title"><nuxt-link :to="item.path"  :title="$t('altTitle.'+item.name+'.title')">{{$t('headerTab.'+item.name)}}</nuxt-link></div>
             <div class="smlist">
                 <nuxt-link :to="item.path"  :title="$t('altTitle.'+item.name+'.title')">{{ $t('headerMore.blocklist')}}</nuxt-link>
-                <nuxt-link :to="'/'+$store.state.locale+'/uncleblock/'">{{$t('headerMore.uncleblocklist')}}</nuxt-link>
+                <nuxt-link :to="$route.params.lang?'/'+$route.params.lang+'/uncleblock/':'/uncleblock/'">{{$t('headerMore.uncleblocklist')}}</nuxt-link>
             </div>
         </div>
         <div class="title"  v-else>
@@ -31,35 +31,35 @@ export default {
       menuData: [
         {
             name:"home",
-            path:'/'+this.$store.state.locale+'/',
+            path:this.$route.params.lang?'/'+this.$route.params.lang+'/':'/',
         },
         {
             name:"largetxs",
-            path:'/'+this.$store.state.locale+'/large/'
+            path:this.$route.params.lang?'/'+this.$route.params.lang+'/large/':'/large/'
         },
         {
             name:"charts",
-            path:'/'+this.$store.state.locale+'/charts/'
+            path:this.$route.params.lang?'/'+this.$route.params.lang+'/charts/':'/charts/'
         },
         {
             name:"blockList",
-            path:'/'+this.$store.state.locale+'/block/'
+            path:this.$route.params.lang?'/'+this.$route.params.lang+'/block/':'/block/'
         },
         {
             name:"newTxs",
-            path:'/'+this.$store.state.locale+'/transaction/'
+            path:this.$route.params.lang?'/'+this.$route.params.lang+'/transaction/':'/transaction/'
         },
         {
             name:"pending",
-            path:'/'+this.$store.state.locale+'/transaction/'
+            path:this.$route.params.lang?'/'+this.$route.params.lang+'/transaction/':'/transaction/'
         },
         {
             name:"newAddress",
-            path:'/'+this.$store.state.locale+'/address/'
+            path:this.$route.params.lang?'/'+this.$route.params.lang+'/address/':'/address/'
         },
         {
             name:"token",
-            path:'/'+this.$store.state.locale+'/token/'
+            path:this.$route.params.lang?'/'+this.$route.params.lang+'/token/':'/token/'
         },
       ],
       current:this.page_index
@@ -77,7 +77,6 @@ export default {
       }
   },
   mounted() {
-      
   },
   components: {},
 };

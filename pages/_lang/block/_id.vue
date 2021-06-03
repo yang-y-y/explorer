@@ -69,11 +69,7 @@
                   <div class="vals">
                     <nuxt-link
                       :to="
-                        '/' +
-                        this.$route.params.lang +
-                        '/block/' +
-                        Number(data.id - 1)
-                      "
+                        this.$route.params.lang?'/'+this.$route.params.lang+'/block/' + Number(data.id - 1):'/block/' + Number(data.id - 1)"
                       >{{ data.parent_hash }}</nuxt-link
                     >
                   </div>
@@ -83,11 +79,7 @@
                   <div class="vals">
                     <nuxt-link
                       :to="
-                        '/' +
-                        this.$route.params.lang +
-                        '/block/' +
-                        Number(data.id + 1)
-                      "
+                        this.$route.params.lang?'/'+this.$route.params.lang+'/block/' +Number(data.id + 1):'/block/' +Number(data.id + 1)"
                       >{{ data.next_hash }}</nuxt-link
                     >
                   </div>
@@ -105,9 +97,8 @@
                   <div class="vals">
                     <nuxt-link
                       :to="
-                        '/' +
-                        this.$route.params.lang +
-                        '/address/' +
+                        this.$route.params.lang?'/'+this.$route.params.lang+'/address/' +
+                        data.miner:'/address/' +
                         data.miner
                       "
                       >{{ data.miner }}</nuxt-link

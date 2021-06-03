@@ -40,8 +40,7 @@ export default {
                   {
                     attrs: {
                       to:
-                        "/" +
-                        this.$store.state.locale +
+                        this.$route.params.lang?'/'+this.$route.params.lang:'' +
                         "/block/" +
                         params.row.id,
                     },

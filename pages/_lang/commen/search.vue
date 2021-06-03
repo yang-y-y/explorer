@@ -37,17 +37,17 @@ export default {
             })
             if(type==this.$store.state.explorer){
                 if(id.length==66){
-                    this.$router.push('/'+this.$store.state.locale+'/transaction/'+id)
+                    this.$router.push(this.$route.params.lang?'/'+this.$route.params.lang+'/transaction/'+id:+'/transaction/'+id)
                 }else if(id.length==42){
-                   this.$router.push('/'+this.$store.state.locale+'/address/'+id)
+                   this.$router.push(this.$route.params.lang?'/'+this.$route.params.lang+'/address/'+id:'/address/'+id)
                 }else if(isNaN(isnumb) == false&&id){
-                   this.$router.push('/'+this.$store.state.locale+'/block/'+id)
+                   this.$router.push(this.$route.params.lang?'/'+this.$route.params.lang+'/block/'+id:'/block/'+id)
                 }
                 else{
                     this.$emit('handleNodata', 'true')
                 }
             }else{
-                 this.$router.push('/'+this.$store.state.locale+'/search/?id='+id)
+                this.$Message.info('Null')
             }
         },
 

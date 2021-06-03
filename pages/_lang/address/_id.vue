@@ -27,7 +27,7 @@
                             </li>
                             <li>
                                 <div class="types">{{$t('address.tokenBalance')}}</div>
-                                <div class="vals"><nuxt-link :to="'/'+$route.params.lang+'/tokentxns/'+$route.params.id">{{$t('address.lookToken')}}</nuxt-link></div>
+                                <div class="vals"><nuxt-link :to="this.$route.params.lang?'/'+this.$route.params.lang+'/tokentxns/'+$route.params.id:'/tokentxns/'+$route.params.id">{{$t('address.lookToken')}}</nuxt-link></div>
                             </li>
                             <li>
                                 <div class="types">{{$t('address.TotalTransactions')}}</div>

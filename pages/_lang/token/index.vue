@@ -66,11 +66,7 @@ export default {
               {
                 attrs: {
                   to:
-                    "/" +
-                    this.$store.state.locale +
-                    "/" +
-                    this.$store.state.explorer +
-                    "/token/" +
+                    this.$route.params.lang?'/'+this.$route.params.lang+'/token/'+params.row.token:"/token/" +
                     params.row.token,
                 },
               },

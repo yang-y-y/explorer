@@ -25,7 +25,7 @@
                             </li>
                             <li>
                                 <div class="types">{{$t('Transaction.Included')}}</div>
-                                <div class="vals"><nuxt-link :to="'/'+this.$route.params.lang+'/block/'+data.block_id">{{data.block_id}}</nuxt-link></div>
+                                <div class="vals"><nuxt-link :to="this.$route.params.lang?'/'+this.$route.params.lang+'/block/'+data.block_id:'/block/'+data.block_id">{{data.block_id}}</nuxt-link></div>
                             </li>
                             <li>
                                 <div class="types">{{$t('Transaction.Time')}}</div>
@@ -33,11 +33,11 @@
                             </li>
                             <li>
                                 <div class="types">{{$t('transaction.from')}}</div>
-                                <div class="vals"><nuxt-link :to="'/'+this.$route.params.lang+'/address/'+data.from">{{data.from}}</nuxt-link></div>
+                                <div class="vals"><nuxt-link :to="this.$route.params.lang?'/'+this.$route.params.lang+'/address/'+data.from:'/address/'+data.from">{{data.from}}</nuxt-link></div>
                             </li>
                             <li>
                                 <div class="types">{{$t('transaction.to')}}</div>
-                                <div class="vals"><nuxt-link :to="'/'+this.$route.params.lang+'/address/'+data.to">{{data.to}}</nuxt-link></div>
+                                <div class="vals"><nuxt-link :to="this.$route.params.lang?'/'+this.$route.params.lang+'/address/'+data.to:'/address/'+data.to">{{data.to}}</nuxt-link></div>
                             </li>
                             <li>
                                 <div class="types">{{$t('Transaction.AmountTransacted')}}</div>

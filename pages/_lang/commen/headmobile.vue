@@ -79,15 +79,15 @@ export default {
       menuData: [
         {
             name:"home",
-            path:'/'+this.$route.params.lang+'/'
+            path:this.$route.params.lang?'/'+this.$route.params.lang+'/':'/',
         },
         {
             name:"largetxs",
-            path:'/'+this.$route.params.lang+'/large/'
+            path:this.$route.params.lang?'/'+this.$route.params.lang+'/large/':'/large/'
         },
         {
             name:"charts",
-            path:'/'+this.$route.params.lang+'/charts/'
+            path:this.$route.params.lang?'/'+this.$route.params.lang+'/charts/':'/charts/'
         },
         {
             name:"blockList",
@@ -95,35 +95,29 @@ export default {
             list: [
             {
               name: "blocklist",
-              path:
-                "/" +
-                this.$route.params.lang +
-                "/block/",
+              path:this.$route.params.lang?'/'+this.$route.params.lang+"/block/":"/block/"
             },
             {
               name: "uncleblocklist",
-              path:
-                "/" +
-                this.$route.params.lang +
-                "/uncleblock/",
+              path:this.$route.params.lang?'/'+this.$route.params.lang+"/uncleblock/":"/uncleblock/"
             },
           ],
         },
         {
             name:"newTxs",
-            path:'/'+this.$route.params.lang+'/transaction/'
+            path:this.$route.params.lang?'/'+this.$route.params.lang+'/transaction/':'/transaction/'
         },
         {
             name:"pending",
-            path:'/'+this.$route.params.lang+'/transaction/'
+            path:this.$route.params.lang?'/'+this.$route.params.lang+'/transaction/':'/transaction/'
         },
         {
             name:"newAddress",
-            path:'/'+this.$route.params.lang+'/address/'
+            path:this.$route.params.lang?'/'+this.$route.params.lang+'/address/':'/address/'
         },
         {
             name:"token",
-            path:'/'+this.$route.params.lang+'/token/'
+            path:this.$route.params.lang?'/'+this.$route.params.lang+'/token/':'/token/'
         },
       ],
     };
@@ -143,18 +137,17 @@ export default {
     },
     
     setLang(val) {
-      this.lang = val;
+       this.lang = val
+    if(val.code == this.$store.state.locale) return false;
+    this.$store.commit('SET_LANG', val.code);
+    this.$i18n.locale = val.code;
+    var changePath = this.$store.state.locale;
+    var beforePath = this.$nuxt.$router.history.current.path;
+    let result = "";
+      result = beforePath.replace("/zh", "");
+    let newUrl = changePath=="en"?result:"/" + changePath + result
 
-      if (val.code == this.$store.state.locale) return false;
-
-      this.$store.commit("SET_LANG", val.code);
-      var changePath = this.$store.state.locale;
-      var beforePath = this.$nuxt.$router.history.current.path;
-      let result = "";
-      result = beforePath.replace("/en", "");
-      result = result.replace("/zh", "");
-      console.log(result);
-      this.$nuxt.$router.replace({ path: "/" + changePath + result });
+    this.$router.replace({ path: newUrl }); 
     },
   },
   mounted() {

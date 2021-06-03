@@ -77,9 +77,8 @@ export default {
               {
                 attrs: {
                   to:
-                    "/" +
-                    this.$store.state.locale +
-                    "/block/" +
+                    this.$route.params.lang?'/'+this.$route.params.lang+"/block/" +
+                    params.row.id:"/block/" +
                     params.row.id,
                 },
               },
@@ -104,9 +103,8 @@ export default {
                   "nuxt-link",
                   {
                     attrs: {
-                      to:"/" +
-                        this.$store.state.locale +
-                        "/address/" +
+                      to:this.$route.params.lang?'/'+this.$route.params.lang+"/address/" +
+                        params.row.miner:"/address/" +
                         params.row.miner,
                     },
                     

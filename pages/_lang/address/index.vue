@@ -67,10 +67,7 @@ export default {
               {
                 attrs: {
                   to:
-                    "/" +
-                    this.$store.state.locale +
-                    "/block/" +
-                    params.row.block_id,
+                    this.$route.params.lang?'/'+this.$route.params.lang+"/block/" + params.row.block_id:"/block/" + params.row.block_id,
                 },
               },
               params.row.block_id
@@ -95,10 +92,7 @@ export default {
                   {
                     attrs: {
                       to:
-                        "/" +
-                        this.$store.state.locale +
-                        "/address/" +
-                        params.row.address
+                        this.$route.params.lang?'/'+this.$route.params.lang+"/address/" + params.row.address:"/address/" + params.row.address
                     },
                   },
                   params.row.address

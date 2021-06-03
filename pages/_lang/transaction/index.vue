@@ -61,7 +61,7 @@ export default {
               }, [
                   h('nuxt-link',{
                     attrs:{
-                      to:'/'+this.$route.params.lang+"/transaction/"+params.row.hash
+                      to:this.$route.params.lang?'/'+this.$route.params.lang+"/transaction/"+params.row.hash:"/transaction/"+params.row.hash
                     }
                   }, params.row.hash)
               ]);
@@ -101,7 +101,7 @@ export default {
               }, [
                   h('nuxt-link',{
                     attrs:{
-                       to:'/'+this.$route.params.lang+"/address/"+params.row.from
+                       to:this.$route.params.lang?'/'+this.$route.params.lang+"/address/"+params.row.from:"/address/"+params.row.from
                     }
                   }, params.row.from)
               ]);
@@ -119,7 +119,7 @@ export default {
               }, [
                   h('nuxt-link',{
                     attrs:{
-                      to:'/'+this.$route.params.lang+"/address/"+params.row.to
+                      to:this.$route.params.lang?'/'+this.$route.params.lang+"/address/"+params.row.to:"/address/"+params.row.to
                     }
                   }, params.row.to)
               ]);

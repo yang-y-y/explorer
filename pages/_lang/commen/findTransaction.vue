@@ -39,7 +39,7 @@ export default {
                   "nuxt-link",
                   {
                     attrs: {
-                      to:'/'+this.$store.state.locale+"/block/"+params.row.id
+                      to:this.$route.params.lang?'/'+this.$route.params.lang:''+"/block/"+params.row.id
                     },
                   },
                   params.row.hash
@@ -89,7 +89,7 @@ export default {
                   "nuxt-link",
                   {
                     attrs: {
-                     to:'/'+this.$store.state.locale+"/address/"+params.row.from
+                     to:this.$route.params.lang?'/'+this.$route.params.lang:''+"/address/"+params.row.from
                     },
                   },
                   params.row.from
@@ -117,7 +117,7 @@ export default {
                   "nuxt-link",
                   {
                     attrs: {
-                     to:'/'+this.$store.state.locale+"/address/"+params.row.to
+                     to:this.$route.params.lang?'/'+this.$route.params.lang:''+"/address/"+params.row.to
                     },
                   },
                   params.row.to

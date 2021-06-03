@@ -35,7 +35,7 @@ let Api = {
 
     isValidAddress:'/'+explorer+'/address/isValidAddress',// 地址是否为有效的 eth 地址 
     isSmartContractAddress:'/'+explorer+'/address/isValidAddress'
-    // this.$ApiUrl.Api
+    // use:this.$ApiUrl.Api
 
 }
 

@@ -39,7 +39,7 @@ export default {
                   "nuxt-link",
                   {
                     attrs: {
-                      to:'/'+this.$store.state.locale+"/block/"+params.row.id
+                      to:this.$route.params.lang?'/'+this.$route.params.lang:''+"/block/"+params.row.id
                     },
                   },
                   params.row.id

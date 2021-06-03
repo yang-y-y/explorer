@@ -41,17 +41,22 @@ export default {
 }
 function setLang(val){
     this.lang = val
-    
     if(val.code == this.$store.state.locale) return false;
-
     this.$store.commit('SET_LANG', val.code);
     this.$i18n.locale = val.code;
     var changePath = this.$store.state.locale;
     var beforePath = this.$nuxt.$router.history.current.path;
+    let pagelang = this.$route.params.lang
+    if(this.$store.state.locales.indexOf(pagelang) == -1){
+        console.log('---in localse---') 
+    }
     let result = "";
-      result = beforePath.replace("/en", "");
-      result = result.replace("/zh", "");
-    this.$nuxt.$router.replace({ path: "/" + changePath + result }); 
+      result = beforePath.replace("/zh", "");
+    
+
+    let newUrl = changePath=="en"?result:"/" + changePath + result
+
+    this.$router.replace({ path: newUrl }); 
 
     // window.history.replaceState('', '', '/'+ changePath + result)
 }
